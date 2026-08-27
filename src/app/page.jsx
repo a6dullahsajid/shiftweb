@@ -102,7 +102,8 @@ const Hero = () => {
         </div>
       </section>
 
-      <section className="services-section flex items-start flex-col lg:flex-row justify-between bg-white mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+      <section className="services-section bg-[#F8FAFC]">
+      <div className="flex items-start flex-col lg:flex-row justify-between mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
         <div className="left flex-1">
           <div>
             <p className="uppercase text-secondary text-[12px]">
@@ -221,6 +222,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
+      </div>
       </section>
 
       <section className="work-section mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
@@ -340,7 +342,8 @@ const Hero = () => {
         </div>
       </section>
 
-      <section className="plan-section mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+      <section className="plan-section bg-[#F8FAFC]">
+        <div className="mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
         <div>
           <p className="uppercase text-secondary text-[12px]">how we start</p>
         </div>
@@ -433,6 +436,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        </div>
       </section>
 
       <section className="testimonial-section flex flex-col justify-center items-center mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
@@ -451,7 +455,7 @@ const Hero = () => {
       </section>
 
       <section className="cta-section flex flex-col justify-center items-center mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
-        <div className="cta-container flex flex-col gap-5 p-15 w-full bg-[#F8FAFC]">
+        <div className="cta-container flex flex-col gap-5 p-8 lg:p-15 w-full bg-[#F8FAFC]">
           <div>
             <p className="text-[12px] text-secondary uppercase">
               Ready to talk?
@@ -467,11 +471,11 @@ const Hero = () => {
               We reply within one business day. Discovery calls this week. Small pilots welcome.
             </p>
           </div>
-          <div className="pt-4 flex items-center gap-5">
-            <button className="bg-[#233DFF] text-white w-[136px] h-[40px] cursor-pointer transition-colors">
+          <div className="pt-4 flex flex-col md:flex-row items-start gap-5">
+            <button className="bg-primary text-white w-[200px] sm:w-[136px] h-[40px] cursor-pointer transition-colors">
               Start a project
             </button>
-            <button className="text-secondary w-[136px] h-[40px] cursor-pointer transition-colors border border-secondary">
+            <button className="text-secondary w-[200px] sm:w-[136px] h-[40px] cursor-pointer transition-colors border border-secondary">
               See our work
             </button>
           </div>
