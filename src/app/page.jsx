@@ -345,7 +345,8 @@ const Hero = () => {
           <p className="uppercase text-secondary text-[12px]">how we start</p>
         </div>
         <div className="flex flex-col md:flex-row gap-8 py-8">
-          <div className="flex-1 flex flex-col gap-12">
+          <div className="flex-1 justify-between flex flex-col gap-12 pb-2">
+            <div className="flex flex-col gap-5">
             <p className="text-primary text-[36px] sm:text-[50px] max-w-[706px] leading-[1.2] font-[140]">
               Plan first. Build second.
             </p>
@@ -355,6 +356,7 @@ const Hero = () => {
               your product so you can test it with the real world before
               committing to the next phase.
             </p>
+            </div>
             <button className="bg-primary text-white w-[136px] h-[40px] cursor-pointer transition-colors">
               Start a project
             </button>
