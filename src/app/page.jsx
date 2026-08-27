@@ -232,82 +232,202 @@ const Hero = () => {
             Built for scale. Designed for impact. See how our digital ecosystems
             perform in the real world.
           </p>
-          <a href="#" className="text-secondary">View all case studies &rarr;</a>
+          <a href="#" className="text-secondary">
+            View all case studies &rarr;
+          </a>
         </div>
         <div className="projet-grid flex flex-wrap lg:flex-nowrap gap-5">
           <div className="project-card-1 p-4 sm:p-8 flex flex-col justify-between gap-2 max-w-[586px] bg-[#F8FAFC] [clip-path:polygon(0_0,35%_0,45%_10%,100%_10%,100%_100%,0_100%)]">
-           <div className="card-top">
-            <div>
-              <p className="text-[12px] text-secondary">E-Commerce</p>
-            </div>
-            <div className="mt-8">
-              <p className="text-[24px] sm:text-[38px]">High-Performance Digital Storefront</p>
-            </div>
-            <div>
-              <p className="text-[14px] sm:text-[18px] text-secondary italic">
-                Engineered for maximum visibility and frictionless conversion
-                for premium athletic gear.
-              </p>
-            </div>
-            <div className="mt-8">
-              <p className="text-secondary text-[14px] sm:text-[18px]">
-                Features a proprietary, role-isolated admin dashboard for
-                real-time inventory control and a bespoke analytics engine
-                tracking precise user click journeys. We bypassed traditional
-                payment gateways in favor of a streamlined, direct-to-WhatsApp
-                sales funnel, backed by flawless technical SEO with 100% index
-                crawlability.
-              </p>
-            </div>
+            <div className="card-top">
+              <div>
+                <p className="text-[12px] text-secondary">E-Commerce</p>
+              </div>
+              <div className="mt-8">
+                <p className="text-[24px] sm:text-[38px]">
+                  High-Performance Digital Storefront
+                </p>
+              </div>
+              <div>
+                <p className="text-[14px] sm:text-[18px] text-secondary italic">
+                  Engineered for maximum visibility and frictionless conversion
+                  for premium athletic gear.
+                </p>
+              </div>
+              <div className="mt-8">
+                <p className="text-secondary text-[14px] sm:text-[18px]">
+                  Features a proprietary, role-isolated admin dashboard for
+                  real-time inventory control and a bespoke analytics engine
+                  tracking precise user click journeys. We bypassed traditional
+                  payment gateways in favor of a streamlined, direct-to-WhatsApp
+                  sales funnel, backed by flawless technical SEO with 100% index
+                  crawlability.
+                </p>
+              </div>
             </div>
             <div className="card-bottom flex flex-col gap-8 mt-8">
-            <div className="flex gap-5 text-[10px] text-secondary">
-              <span className="border p-1 border-secondary">Next.js Architecture</span>
-              <span className="border p-1 border-secondary">Proprietary Analytics Engine</span>
-              <span className="border p-1 border-secondary">Live in production</span>
-            </div>
-            <div>
-              <a href="#" className="text-secondary text-[14px] sm:text-[18px]">Read the case study &rarr;</a>
-            </div>
+              <div className="flex gap-5 text-[10px] text-secondary">
+                <span className="border p-1 border-secondary">
+                  Next.js Architecture
+                </span>
+                <span className="border p-1 border-secondary">
+                  Proprietary Analytics Engine
+                </span>
+                <span className="border p-1 border-secondary">
+                  Live in production
+                </span>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  className="text-secondary text-[14px] sm:text-[18px]"
+                >
+                  Read the case study &rarr;
+                </a>
+              </div>
             </div>
           </div>
           <div className="project-card-2 p-4 sm:p-8 flex flex-col justify-between gap-2 max-w-[586px] bg-[#F8FAFC] [clip-path:polygon(0_0,35%_0,45%_10%,100%_10%,100%_100%,0_100%)]">
-           <div className="card-top">
-            <div>
-              <p className="text-[12px] text-secondary">E-Commerce</p>
-            </div>
-            <div className="mt-8">
-              <p className="text-[24px] sm:text-[38px]">High-Performance Digital Storefront</p>
-            </div>
-            <div>
-              <p className="text-[14px] sm:text-[18px] text-secondary italic">
-                Engineered for maximum visibility and frictionless conversion
-                for premium athletic gear.
-              </p>
-            </div>
-            <div className="mt-8">
-              <p className="text-secondary text-[14px] sm:text-[18px]">
-                Features a proprietary, role-isolated admin dashboard for
-                real-time inventory control and a bespoke analytics engine
-                tracking precise user click journeys. We bypassed traditional
-                payment gateways in favor of a streamlined, direct-to-WhatsApp
-                sales funnel, backed by flawless technical SEO with 100% index
-                crawlability.
-              </p>
-            </div>
+            <div className="card-top">
+              <div>
+                <p className="text-[12px] text-secondary">E-Commerce</p>
+              </div>
+              <div className="mt-8">
+                <p className="text-[24px] sm:text-[38px]">
+                  High-Performance Digital Storefront
+                </p>
+              </div>
+              <div>
+                <p className="text-[14px] sm:text-[18px] text-secondary italic">
+                  Engineered for maximum visibility and frictionless conversion
+                  for premium athletic gear.
+                </p>
+              </div>
+              <div className="mt-8">
+                <p className="text-secondary text-[14px] sm:text-[18px]">
+                  Features a proprietary, role-isolated admin dashboard for
+                  real-time inventory control and a bespoke analytics engine
+                  tracking precise user click journeys. We bypassed traditional
+                  payment gateways in favor of a streamlined, direct-to-WhatsApp
+                  sales funnel, backed by flawless technical SEO with 100% index
+                  crawlability.
+                </p>
+              </div>
             </div>
             <div className="card-bottom flex flex-col gap-8 mt-8">
-            <div className="flex gap-5 text-[10px] text-secondary">
-              <span className="border p-1 border-secondary">Next.js Architecture</span>
-              <span className="border p-1 border-secondary">Proprietary Analytics Engine</span>
-              <span className="border p-1 border-secondary">Live in production</span>
-            </div>
-            <div>
-              <a href="#" className="text-secondary text-[14px] sm:text-[18px]">Read the case study &rarr;</a>
-            </div>
+              <div className="flex gap-5 text-[10px] text-secondary">
+                <span className="border p-1 border-secondary">
+                  Next.js Architecture
+                </span>
+                <span className="border p-1 border-secondary">
+                  Proprietary Analytics Engine
+                </span>
+                <span className="border p-1 border-secondary">
+                  Live in production
+                </span>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  className="text-secondary text-[14px] sm:text-[18px]"
+                >
+                  Read the case study &rarr;
+                </a>
+              </div>
             </div>
           </div>
-          
+        </div>
+      </section>
+
+      <section className="plan-section mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+        <div>
+          <p className="uppercase text-secondary text-[12px]">how we start</p>
+        </div>
+        <div className="flex flex-col md:flex-row gap-8 py-8">
+          <div className="flex-1 flex flex-col gap-12">
+            <p className="text-primary text-[36px] sm:text-[50px] max-w-[706px] leading-[1.2] font-[140]">
+              Plan first. Build second.
+            </p>
+            <p className="text-[20px] max-w-[350px] text-secondary">
+              We start by simplifying your vision. Next, we map out the exact
+              steps to get there. Then, we build a fast, high-quality version of
+              your product so you can test it with the real world before
+              committing to the next phase.
+            </p>
+            <button className="bg-primary text-white w-[136px] h-[40px] cursor-pointer transition-colors">
+              Start a project
+            </button>
+          </div>
+
+          {/* sadfsdf */}
+          <div className="flex-1 py-2 mt-5 md:mt-0">
+            <div className="relative">
+              {/* Continuous Vertical Line */}
+              <div className="absolute left-[9px] top-0 bottom-0 w-[2px] bg-secondary/50"></div>
+
+              {/* Timeline Items Container */}
+              <div className="flex flex-col gap-8">
+                {/* Step 1 */}
+                <div className="relative flex items-start gap-6">
+                  <div className="relative z-10 w-[20px] h-[20px] bg-primary shrink-0"></div>
+                  <div className="flex flex-col gap-2.5">
+                    <p className="text-[12px] uppercase tracking-wider text-secondary">
+                      DAY 1
+                    </p>
+                    <h3 className="text-[20px] leading-none">Discovery call</h3>
+                    <p className="text-[16px] text-secondary leading-relaxed">
+                      30 minutes this week. No slides. No pitch deck.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Step 2 */}
+                <div className="relative flex items-start gap-6">
+                  <div className="relative z-10 w-[20px] h-[20px] bg-primary shrink-0"></div>
+                  <div className="flex flex-col gap-2.5">
+                    <p className="text-[12px] uppercase tracking-wider text-secondary">
+                      WITHIN 3 BUSINESS DAYS
+                    </p>
+                    <h3 className="text-[20px] leading-none">
+                      Scope & proposal
+                    </h3>
+                    <p className="text-[16px] text-secondary leading-relaxed">
+                      A plan you can build with us — or with anyone else.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Step 3 */}
+                <div className="relative flex items-start gap-6">
+                  <div className="relative z-10 w-[20px] h-[20px] bg-primary shrink-0"></div>
+                  <div className="flex flex-col gap-2.5">
+                    <p className="text-[12px] uppercase tracking-wider text-secondary">
+                      WEEK 1
+                    </p>
+                    <h3 className="text-[20px] leading-none">Kickoff</h3>
+                    <p className="text-[16px] text-secondary leading-relaxed">
+                      Team in place, infra up, first code in main.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Step 4 */}
+                <div className="relative flex items-start gap-6">
+                  <div className="relative z-10 w-[20px] h-[20px] bg-primary shrink-0"></div>
+                  <div className="flex flex-col gap-2.5">
+                    <p className="text-[12px] uppercase tracking-wider text-secondary">
+                      WEEK 3
+                    </p>
+                    <h3 className="text-[20px] leading-none">
+                      First working demo
+                    </h3>
+                    <p className="text-[16px] text-secondary leading-relaxed">
+                      Something you can click on. Not a Figma link.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
