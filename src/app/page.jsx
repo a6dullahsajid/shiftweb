@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 
+import TestimonialMarquee from "./components/TestimonialMarquee";
+
 const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const cubes = ["Logo", "Website", "Brand kit"];
@@ -429,6 +431,42 @@ const Hero = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="testimonial-section flex flex-col justify-center items-center mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+        <div>
+          <p className="uppercase text-secondary text-[12px]">
+            Why founders trust us
+          </p>
+        </div>
+        <div className="pb-5">
+          <p className="text-primary text-center text-[36px] sm:text-[50px] max-w-[806px] leading-[1.2] font-[140]">
+            “We never pad the scope. We’d rather simplify the architecture and
+            earn your trust.”
+          </p>
+        </div>
+        {/* <div className="testimonial-container flex gap-5 max-w-[806px]">
+          <div className="relative w-full flex gap-4 h-[220px] [mask-image:linear-gradient(to_right,transparent_0%,black_15%,black_85%,transparent_100%)]">
+            <div className="bg-[#F8FAFC] flex flex-col gap-4 justify-center items-center  p-8">
+              <p className="text-center text-secondary">
+                “We never pad the scope. We’d rather simplify the architecture
+                and earn your trust.”
+              </p>
+              <div className="hl h-[1px] bg-secondary/50 w-[90%]"></div>
+              <p className="text-secondary">kickxwear</p>
+            </div>
+            <div className="bg-[#F8FAFC] flex flex-col gap-4 justify-center items-center p-5">
+              <p className="text-center text-secondary">
+                “We never pad the scope. We’d rather simplify the architecture
+                and earn your trust.”
+              </p>
+              <div className="hl h-[1px] bg-secondary/50 w-[90%]"></div>
+              <p className="text-secondary">kickxwear</p>
+            </div>
+            
+          </div>
+        </div> */}
+        <TestimonialMarquee />
       </section>
     </>
   );
