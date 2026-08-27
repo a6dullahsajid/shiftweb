@@ -347,15 +347,15 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row gap-8 py-8">
           <div className="flex-1 justify-between flex flex-col gap-12 pb-2">
             <div className="flex flex-col gap-5">
-            <p className="text-primary text-[36px] sm:text-[50px] max-w-[706px] leading-[1.2] font-[140]">
-              Plan first. Build second.
-            </p>
-            <p className="text-[20px] max-w-[350px] text-secondary">
-              We start by simplifying your vision. Next, we map out the exact
-              steps to get there. Then, we build a fast, high-quality version of
-              your product so you can test it with the real world before
-              committing to the next phase.
-            </p>
+              <p className="text-primary text-[36px] sm:text-[50px] max-w-[706px] leading-[1.2] font-[140]">
+                Plan first. Build second.
+              </p>
+              <p className="text-[20px] max-w-[350px] text-secondary">
+                We start by simplifying your vision. Next, we map out the exact
+                steps to get there. Then, we build a fast, high-quality version
+                of your product so you can test it with the real world before
+                committing to the next phase.
+              </p>
             </div>
             <button className="bg-primary text-white w-[136px] h-[40px] cursor-pointer transition-colors">
               Start a project
@@ -447,28 +447,35 @@ const Hero = () => {
             earn your trust.”
           </p>
         </div>
-        {/* <div className="testimonial-container flex gap-5 max-w-[806px]">
-          <div className="relative w-full flex gap-4 h-[220px] [mask-image:linear-gradient(to_right,transparent_0%,black_15%,black_85%,transparent_100%)]">
-            <div className="bg-[#F8FAFC] flex flex-col gap-4 justify-center items-center  p-8">
-              <p className="text-center text-secondary">
-                “We never pad the scope. We’d rather simplify the architecture
-                and earn your trust.”
-              </p>
-              <div className="hl h-[1px] bg-secondary/50 w-[90%]"></div>
-              <p className="text-secondary">kickxwear</p>
-            </div>
-            <div className="bg-[#F8FAFC] flex flex-col gap-4 justify-center items-center p-5">
-              <p className="text-center text-secondary">
-                “We never pad the scope. We’d rather simplify the architecture
-                and earn your trust.”
-              </p>
-              <div className="hl h-[1px] bg-secondary/50 w-[90%]"></div>
-              <p className="text-secondary">kickxwear</p>
-            </div>
-            
-          </div>
-        </div> */}
         <TestimonialMarquee />
+      </section>
+
+      <section className="cta-section flex flex-col justify-center items-center mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+        <div className="cta-container flex flex-col gap-5 p-15 w-full bg-[#F8FAFC]">
+          <div>
+            <p className="text-[12px] text-secondary uppercase">
+              Ready to talk?
+            </p>
+          </div>
+          <div className="max-w-[755px]">
+            <p className="text-primary text-[36px] sm:text-[50px] max-w-[806px] leading-[1.2] font-[140]">
+              Tell us what you're trying to build.
+            </p>
+          </div>
+          <div className="max-w-[605px]">
+            <p className="text-[22px] text-secondary">
+              We reply within one business day. Discovery calls this week. Small pilots welcome.
+            </p>
+          </div>
+          <div className="pt-4 flex items-center gap-5">
+            <button className="bg-[#233DFF] text-white w-[136px] h-[40px] cursor-pointer transition-colors">
+              Start a project
+            </button>
+            <button className="text-secondary w-[136px] h-[40px] cursor-pointer transition-colors border border-secondary">
+              See our work
+            </button>
+          </div>
+        </div>
       </section>
     </>
   );
