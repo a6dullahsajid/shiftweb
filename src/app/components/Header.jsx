@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <>
-    <header className='sticky top-0 z-40 backdrop-blur-lg bg-cream/80 border-b border-divider border-[#64748B]'>
+    <header className='sticky top-0 z-40 backdrop-blur-lg bg-white/80 border-b border-divider border-[#64748B]'>
         <div className='mx-auto w-full px-6 md:px-10 max-w-6xl flex items-center justify-between h-[72px] py-4'>
         <a className="flex items-center gap-2.5 font-display text-2xl tracking-tight leading-none">
             <Image src={shiftweb_logo} alt='header-logo' loading='eager' width={84}/>
@@ -65,7 +65,7 @@ const Header = () => {
 
       {/* Sidebar Container */}
       <div 
-        className={`fixed top-0 right-0 h-full w-64 bg-cream/95 backdrop-blur-md shadow-2xl z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed top-0 right-0 h-full w-64 bg-white/95 backdrop-blur-md shadow-2xl z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
           isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >

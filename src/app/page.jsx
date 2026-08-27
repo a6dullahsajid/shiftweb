@@ -260,7 +260,7 @@ const Hero = () => {
               </p>
             </div>
             </div>
-            <div className="card-bottom flex flex-col gap-5 mt-8">
+            <div className="card-bottom flex flex-col gap-8 mt-8">
             <div className="flex gap-5 text-[10px] text-secondary">
               <span className="border p-1 border-secondary">Next.js Architecture</span>
               <span className="border p-1 border-secondary">Proprietary Analytics Engine</span>
@@ -296,7 +296,7 @@ const Hero = () => {
               </p>
             </div>
             </div>
-            <div className="card-bottom flex flex-col gap-5 mt-8">
+            <div className="card-bottom flex flex-col gap-8 mt-8">
             <div className="flex gap-5 text-[10px] text-secondary">
               <span className="border p-1 border-secondary">Next.js Architecture</span>
               <span className="border p-1 border-secondary">Proprietary Analytics Engine</span>
