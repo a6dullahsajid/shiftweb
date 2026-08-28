@@ -28,7 +28,7 @@ const Header = () => {
                   <Link href="/" className="hover:text-gray-500 transition-colors">Our services</Link>
                 </li>
                 <li>
-                  <Link href="/about" className="hover:text-gray-500 transition-colors">Our work</Link>
+                  <Link href="/work" className="hover:text-gray-500 transition-colors">Our work</Link>
                 </li>
                 <li>
                   <Link href="/services" className="hover:text-gray-500 transition-colors">How we work</Link>
@@ -37,7 +37,7 @@ const Header = () => {
                   <Link href="/services" className="hover:text-gray-500 transition-colors">Team</Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-gray-500 transition-colors">About</Link>
+                  <Link href="/aboutus" className="hover:text-gray-500 transition-colors">About</Link>
                 </li>
                 <button className='bg-[#233DFF] text-white w-[136px] h-[40px] cursor-pointer transition-colors'>
                     Start a project
