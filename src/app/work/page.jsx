@@ -1,243 +1,141 @@
-import ProjectCard from "../components/ProjectCard";
+import kickxwear from "../assets/kickxwear-card.png";
+import oasistrends from "../assets/oasistrends-card.png";
+import PremiumCard from "../components/PremiumCard.jsx";
+import vanlife from "../assets/vanlife-card.png";
+import spendwise from "../assets/spendwise-card.png";
+import Cta from "../components/Cta";
 
-import kickxwear from "../assets/kickxwear.png";
-import menuBar from "../assets/menu-bar.png";
-import oasisTrends from "../assets/oasistrends.png";
-import portexa from "../assets/portexa.png";
+// const projects = [
+//   {
+//     number: "01",
+//     title: "Kickxwear",
+//     category: "E-commerce",
+//     services: ["Next.js", "Development", "SEO"],
+//     image: kickxwear,
+//     href: "/work/kickxwear",
+//     featured: true,
+//   },
+//   {
+//     number: "02",
+//     title: "Menu Bar",
+//     category: "Website",
+//     services: ["Web Design", "Development"],
+//     image: menuBar,
+//     href: "/work/menu-bar",
+//   },
+//   {
+//     number: "03",
+//     title: "Oasis Trends",
+//     category: "E-commerce",
+//     services: ["Web Design", "Development"],
+//     image: oasisTrends,
+//     href: "/work/oasis-trends",
+//   },
+//   {
+//     number: "04",
+//     title: "Portexa",
+//     category: "Website",
+//     services: ["Development", "SEO"],
+//     image: portexa,
+//     href: "/work/portexa",
+//   },
+// ];
 
-const projects = [
+const cardInfo = [
   {
-    number: "01",
-    title: "Kickxwear",
-    category: "E-commerce",
-    services: ["Next.js", "Development", "SEO"],
-    image: kickxwear,
-    href: "/work/kickxwear",
-    featured: true,
+    id: "01",
+    titleTop: ["Kickxwear", "E-Commerce", "Live"],
+    imageUrl: kickxwear,
+    title: "High-Performance Digital Storefront",
+    description:
+      "Features a proprietary, role-isolated admin dashboard for real-time inventory control and a bespoke analytics engine tracking precise user click journeys. We bypassed traditional payment gateways in favor of a streamlined, direct-to-WhatsApp sales funnel, backed by flawless technical SEO with 100% index crawlability",
+    features: [
+      "Next.js Architecture",
+      "Proprietary Analytics Engine",
+      "Live in production",
+    ],
+    redirectLink: "shiftweb/work/kickxwear",
   },
   {
-    number: "02",
-    title: "Menu Bar",
-    category: "Website",
-    services: ["Web Design", "Development"],
-    image: menuBar,
-    href: "/work/menu-bar",
+    id: "02",
+    titleTop: ["Oasis Trends", "Corporate Showcase", "Live"],
+    imageUrl: oasistrends,
+    title: "Single-Page Digital Presence & B2B Catalog",
+    description:
+      "A high-performance static architecture designed to establish a premium digital footprint. Features a streamlined, read-only product catalog showcasing bulk inventory without the overhead of transactional e-commerce infrastructure, ensuring lightning-fast load times and seamless navigation.",
+    features: [
+      "Single-Page Architecture",
+      "Static Generation",
+      "Live in production",
+    ],
+    redirectLink: "shiftweb/work/oasistrends",
   },
   {
-    number: "03",
-    title: "Oasis Trends",
-    category: "E-commerce",
-    services: ["Web Design", "Development"],
-    image: oasisTrends,
-    href: "/work/oasis-trends",
+    id: 3, // Make sure this ID is unique in your array
+
+    // Top bar: [Category] • [Project Name] • [Status]
+    titleTop: ["Vanlife", "Frontend & UI/UX", "Live"],
+    imageUrl: vanlife,
+
+    title: "Van Rental Platform Interface & Experience",
+
+    description:
+      "A fully responsive frontend architecture and custom UI/UX design for a specialized vehicle renting platform. Delivers an engaging browsing experience featuring detailed van specifications, pricing models, and user reviews, focusing entirely on client-side performance and seamless layout.",
+
+    // The tags for the bottom borders
+    features: ["React", "UI/UX Design", "Responsive Layout"],
+    redirectLink: "shiftweb/work/vanlife",
   },
   {
-    number: "04",
-    title: "Portexa",
-    category: "Website",
-    services: ["Development", "SEO"],
-    image: portexa,
-    href: "/work/portexa",
+    id: 4, // Make sure this ID is unique in your array
+
+    // Top bar: [Category] • [Project Name] • [Status]
+    titleTop: ["Spendwise", "Full Stack", "Live"],
+    imageUrl: spendwise,
+    title: "Smart Expense Tracker & AI Financial Assistant",
+
+    description:
+      "A comprehensive full-stack financial management platform built on the MERN stack. Features an integrated AI chatbot for intelligent insights, dynamic expense-to-income graphs for visual data analysis, and a secure backend for reliable transaction tracking.",
+
+    // The tags for the bottom borders
+    features: ["MERN Stack", "AI Integration", "Data Visualization"],
+
+    redirectLink: "shiftweb/work/spendwise",
   },
 ];
 
 export default function WorkPage() {
   return (
-    <main className="min-h-screen bg-white text-black">
-      {/* =========================================
-          INTRO
-      ========================================== */}
-
-      <section className="mx-auto px-14 py-10 md:px-16 md:py-8 lg:py-12 lg:px-40">
-        <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-[0.8fr_1.2fr]">
-          {/* LEFT */}
-          <div className="flex flex-col justify-start">
-            <p className="mb-2 md:mb-7 text-sm font-semibold uppercase tracking-wide text-primary">
-              Our work
-            </p>
-
-            <h1
-              className="
-                text-5xl
-                font-semibold
-                leading-[0.9]
-                tracking-[-0.045em]
-                sm:text-7xl
-                lg:text-[86px]
-              "
-            >
-              Selected
-              <br />
-              <span className="text-primary">work.</span>
-            </h1>
-
-            <p
-              className="
-                mt-3
-                max-w-md
-                text-lg
-                leading-8
-                text-slate-500
-                lg:text-xl
-              "
-            >
-              Websites, brands and digital experiences built for real-world
-              traffic.
-            </p>
-
-            {/* FILTERS */}
-            <div className="mt-3 md:mt-12 flex flex-wrap gap-1 md:gap-3">
-              <button
-                className="
-                  border
-                  border-primary
-                  bg-primary
-                  px-5
-                  md:px-6
-                  md:py-3
-                  text-xs
-                  md:text-sm
-                  font-medium
-                  text-white
-                  transition-opacity
-                  hover:opacity-90
-                "
-              >
-                All
-              </button>
-
-              <button
-                className="
-                  border
-                  border-slate-300
-                  bg-white
-                  px-6
-                  py-3
-                  text-sm
-                  text-slate-600
-                  transition-colors
-                  hover:border-black
-                  hover:text-black
-                "
-              >
-                Websites
-              </button>
-
-              <button
-                className="
-                  border
-                  border-slate-300
-                  bg-white
-                  px-6
-                  py-3
-                  text-sm
-                  text-slate-600
-                  transition-colors
-                  hover:border-black
-                  hover:text-black
-                "
-              >
-                E-commerce
-              </button>
-
-              <button
-                className="
-                  border
-                  border-slate-300
-                  bg-white
-                  px-6
-                  py-3
-                  text-sm
-                  text-slate-600
-                  transition-colors
-                  hover:border-black
-                  hover:text-black
-                "
-              >
-                Branding
-              </button>
-            </div>
-          </div>
-
-          {/* =========================================
-              FEATURED PROJECT
-          ========================================== */}
-
-          <div className="lg:pt-1">
-            <ProjectCard {...projects[0]} />
-          </div>
-        </div>
-      </section>
-
-      {/* =========================================
-          OTHER PROJECTS
-      ========================================== */}
-
-      <section className="mx-auto px-16 md:p-12 lg:px-40">
-        <div className="grid grid-cols-1 gap-x-28 gap-y-24 md:grid-cols-2 lg:grid-cols-3">
-          {projects.slice(1).map((project) => (
-            <ProjectCard key={project.number} {...project} />
-          ))}
-        </div>
-      </section>
-
-      {/* =========================================
-          CTA
-      ========================================== */}
-
-      <section className="border-t border-slate-200">
-        <div
-          className="
-            mx-auto
-            max-w-[1400px]
-            px-6
-            py-28
-            md:px-10
-            lg:px-16
-          "
-        >
-          <p className="mb-6 text-sm font-semibold uppercase tracking-wide text-primary">
-            Have a project in mind?
-          </p>
-
-          <div className="flex flex-col justify-between gap-12 lg:flex-row lg:items-end">
-            <h2
-              className="
-                max-w-3xl
-                text-4xl
-                font-semibold
-                leading-[0.95]
-                tracking-[-0.04em]
-                md:text-7xl
-              "
-            >
-              Let&apos;s build
-              <br />
-              something
-              <span className="text-primary pl-2">awesome.</span>
-            </h2>
-
-            <a
-              href="#"
-              className="
-                inline-flex
-                w-fit
-                items-center
-                bg-primary
-                px-7
-                py-4
-                text-base
-                font-medium
-                text-white
-                transition-opacity
-                hover:opacity-90
-              "
-            >
-              Start a project →
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
+    <>
+    <section className="work-section mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+      <div>
+        <p className="uppercase text-secondary text-[12px]">work</p>
+      </div>
+      <div className="py-8">
+        <p className="text-primary text-[36px] sm:text-[50px] max-w-[706px] leading-[1.2] font-[140]">
+          Production software, in domains that don't tolerate shortcuts.
+        </p>
+        <p className="text-[18px] my-8 text-secondary max-w-[706px]">
+          Every case study here is a live or delivered system. No concept demos,
+          no speculative decks — just what we built, how, and what it did for
+          the client.
+        </p>
+      </div>
+      <div className="projet-grid grid grid-cols-1 lg:grid-cols-2 gap-5">
+        {cardInfo.map((info, index) => (
+          <PremiumCard key={index} info={info} />
+        ))}
+      </div>
+      <div className="hr-line mt-15 border-b border-divider border-[#64748B] w-full"></div>
+      <div className="py-15">
+        <p className="text-[28px] mb-5">And more — we've shipped 10+ complex projects.</p>
+        <p className="text-[16px] max-w-[680px] text-secondary">The ones above are a handful we can write up publicly. The rest are under NDA or just not captured yet — happy to walk through any of them on a call.</p>
+      </div>
+      <div className="mt-20">
+      <Cta />
+      </div>
+    </section>
+    
+    </>
   );
 }

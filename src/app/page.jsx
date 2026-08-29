@@ -6,6 +6,7 @@ import TestimonialMarquee from "./components/TestimonialMarquee";
 import kickxwear from "./assets/kickxwear-card.png";
 import oasistrends from "./assets/oasistrends-card.png";
 import PremiumCard from "./components/PremiumCard";
+import Cta from "./components/Cta";
 
 const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -355,7 +356,7 @@ const Hero = () => {
         <TestimonialMarquee />
       </section>
 
-      <section className="cta-section flex flex-col justify-center items-center mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+      {/* <section className="cta-section flex flex-col justify-center items-center mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
         <div className="cta-container flex flex-col gap-5 p-8 lg:p-15 w-full bg-[#F8FAFC]">
           <div>
             <p className="text-[12px] text-secondary uppercase">
@@ -382,7 +383,12 @@ const Hero = () => {
             </button>
           </div>
         </div>
+      </section> */}
+      <section className="cta-section flex flex-col justify-center items-center mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+      <Cta />
       </section>
+      
+
     </>
   );
 };

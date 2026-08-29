@@ -23,7 +23,7 @@ const Header = () => {
             <Image src={shiftweb_logo} alt='header-logo' loading='eager' width={84}/>
         </a>
         <nav className="navbar-desk hidden md:flex">
-            <ul className='flex items-center gap-8 text-[#64748B] text-[14px]'>
+            <ul className='flex items-center gap-8 text-[#64748B] text-[12px] lg:text-[14px]'>
                 <li>
                   <Link href="/" className="hover:text-gray-500 transition-colors">Our services</Link>
                 </li>
