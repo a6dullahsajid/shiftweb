@@ -3,6 +3,9 @@
 import { useState, useEffect } from "react";
 
 import TestimonialMarquee from "./components/TestimonialMarquee";
+import Image from "next/image";
+import kickxwear from "./assets/kickxwear-card.png";
+import oasistrends from "./assets/oasistrends-card.png";
 
 const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -103,126 +106,86 @@ const Hero = () => {
       </section>
 
       <section className="services-section bg-[#F8FAFC]">
-      <div className="flex items-start flex-col lg:flex-row justify-between mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
-        <div className="left flex-1">
-          <div>
-            <p className="uppercase text-secondary text-[12px]">
-              What We Deliver
-            </p>
-          </div>
-          <div className="py-8">
-            <p className="text-primary text-[36px] sm:text-[50px] max-w-[706px] leading-[1.2] font-[140]">
-              From your visual identity to your launch strategy. We provide the
-              complete digital toolkit to get your business off the ground.
-            </p>
-          </div>
-          {/* <div className="service-grid flex flex-col gap-5">
-          <div className="service-grid-top flex flex-col sm:flex-row sm:justify-center sm:items-center items-center gap-5">
-          <div className="w-[300px] h-[300px] bg-[#C1E1FF] p-4 flex flex-col justify-between">
-          <p className="text-[12px] text-secondary">01</p>
-          <div className="flex flex-col gap-5 pb-5">
-          <p className="text-[18px]">High-Performance Websites</p>
-          <p className="text-[12px] text-secondary">We build responsive, conversion-focused digital storefronts engineered for immediate impact.</p>
-          </div>
-          </div>
-          <div className="w-[300px] h-[300px] bg-[#FDF2F8] p-4 flex flex-col justify-between">
-          <p className="text-[12px] text-secondary">02</p>
-          <div className="flex flex-col gap-5 pb-5">
-          <p className="text-[18px]">Brand Identity</p>
-          <p className="text-[12px] text-secondary">We deliver complete visual systems and professional logos to ensure absolute brand consistency.</p>
-          </div>
-          </div>
-          <div className="w-[300px] h-[300px] bg-[#F0FDF4] p-4 flex flex-col justify-between">
-          <p className="text-[12px] text-secondary">03</p>
-          <div className="flex flex-col gap-5 pb-5">
-          <p className="text-[18px]">SEO Revitalization</p>
-          <p className="text-[12px] text-secondary">We upgrade your existing architecture with technical SEO strategies to dominate search rankings.</p>
-          </div>
-          </div>
-          </div>
-          <div className="service-grid-bottom flex items-center gap-5">
-          <div className="w-[460px] h-[300px] bg-[#FDEFDD] p-4 flex flex-col justify-between">
-          <p className="text-[12px] text-secondary">04</p>
-          <div className="flex flex-col gap-5 pb-5">
-          <p className="text-[18px]">Social Media Kick-Start</p>
-          <p className="text-[12px] text-secondary max-w-[350px]">We ignite audience growth with a 30-day custom content campaign for your social channels.</p>
-          </div>
-          </div>
-          <div className="w-[460px] h-[300px] bg-primary p-4 flex flex-col justify-between">
-          <p className="text-[12px] text-white">05</p>
-          <div className="flex flex-col gap-5 pb-5">
-          <p className="text-[18px] text-white">Custom Web Software & SaaS</p>
-          <p className="text-[12px] text-stone-200 max-w-[350px]">We engineer robust, data-driven web applications and custom software for complex business needs.</p>
-          </div>
-          </div>
-          </div>
-        </div> */}
-          <div className="service-grid flex flex-col gap-5 mt-5">
-            {/* Top Row */}
-            <div className="service-grid-top flex flex-wrap items-center gap-5">
-              <div className="w-full max-w-full md:max-w-[300px] h-[300px] bg-[#C1E1FF] p-4 flex flex-col justify-between">
-                <p className="text-[12px] text-secondary">01</p>
-                <div className="flex flex-col gap-5 pb-5">
-                  <p className="text-[18px]">High-Performance Websites</p>
-                  <p className="text-[12px] text-secondary">
-                    We build responsive, conversion-focused digital storefronts
-                    engineered for immediate impact.
-                  </p>
-                </div>
-              </div>
-
-              <div className="w-full max-w-full md:max-w-[300px] h-[300px] bg-[#FDF2F8] p-4 flex flex-col justify-between">
-                <p className="text-[12px] text-secondary">02</p>
-                <div className="flex flex-col gap-5 pb-5">
-                  <p className="text-[18px]">Brand Identity</p>
-                  <p className="text-[12px] text-secondary">
-                    We deliver complete visual systems and professional logos to
-                    ensure absolute brand consistency.
-                  </p>
-                </div>
-              </div>
-
-              <div className="w-full max-w-full md:max-w-[620px] lg:max-w-[300px] h-[300px] bg-[#F0FDF4] p-4 flex flex-col justify-between">
-                <p className="text-[12px] text-secondary">03</p>
-                <div className="flex flex-col gap-5 pb-5">
-                  <p className="text-[18px]">SEO Revitalization</p>
-                  <p className="text-[12px] text-secondary">
-                    We upgrade your existing architecture with technical SEO
-                    strategies to dominate search rankings.
-                  </p>
-                </div>
-              </div>
+        <div className="flex items-start flex-col lg:flex-row justify-between mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+          <div className="left flex-1">
+            <div>
+              <p className="uppercase text-secondary text-[12px]">
+                What We Deliver
+              </p>
             </div>
+            <div className="py-8">
+              <p className="text-primary text-[36px] sm:text-[50px] max-w-[706px] leading-[1.2] font-[140]">
+                From your visual identity to your launch strategy. We provide
+                the complete digital toolkit to get your business off the
+                ground.
+              </p>
+            </div>
+            <div className="service-grid flex flex-col gap-5 mt-5">
+              {/* Top Row */}
+              <div className="service-grid-top flex flex-wrap items-center gap-5">
+                <div className="w-full max-w-full md:max-w-[300px] h-[300px] bg-[#C1E1FF] p-4 flex flex-col justify-between">
+                  <p className="text-[12px] text-secondary">01</p>
+                  <div className="flex flex-col gap-5 pb-5">
+                    <p className="text-[18px]">High-Performance Websites</p>
+                    <p className="text-[12px] text-secondary">
+                      We build responsive, conversion-focused digital
+                      storefronts engineered for immediate impact.
+                    </p>
+                  </div>
+                </div>
 
-            {/* Bottom Row */}
-            <div className="service-grid-bottom flex flex-wrap items-center gap-5">
-              <div className="w-full max-w-full md:max-w-[620px] lg:max-w-[460px] h-[300px] bg-[#FDEFDD] p-4 flex flex-col justify-between">
-                <p className="text-[12px] text-secondary">04</p>
-                <div className="flex flex-col gap-5 pb-5">
-                  <p className="text-[18px]">Social Media Kick-Start</p>
-                  <p className="text-[12px] text-secondary max-w-[350px]">
-                    We ignite audience growth with a 30-day custom content
-                    campaign for your social channels.
-                  </p>
+                <div className="w-full max-w-full md:max-w-[300px] h-[300px] bg-[#FDF2F8] p-4 flex flex-col justify-between">
+                  <p className="text-[12px] text-secondary">02</p>
+                  <div className="flex flex-col gap-5 pb-5">
+                    <p className="text-[18px]">Brand Identity</p>
+                    <p className="text-[12px] text-secondary">
+                      We deliver complete visual systems and professional logos
+                      to ensure absolute brand consistency.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="w-full max-w-full md:max-w-[620px] lg:max-w-[300px] h-[300px] bg-[#F0FDF4] p-4 flex flex-col justify-between">
+                  <p className="text-[12px] text-secondary">03</p>
+                  <div className="flex flex-col gap-5 pb-5">
+                    <p className="text-[18px]">SEO Revitalization</p>
+                    <p className="text-[12px] text-secondary">
+                      We upgrade your existing architecture with technical SEO
+                      strategies to dominate search rankings.
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              <div className="w-full max-w-full md:max-w-[620px] lg:max-w-[460px] h-[300px] bg-primary p-4 flex flex-col justify-between">
-                <p className="text-[12px] text-white">05</p>
-                <div className="flex flex-col gap-5 pb-5">
-                  <p className="text-[18px] text-white">
-                    Custom Web Software & SaaS
-                  </p>
-                  <p className="text-[12px] text-stone-200 max-w-[350px]">
-                    We engineer robust, data-driven web applications and custom
-                    software for complex business needs.
-                  </p>
+              {/* Bottom Row */}
+              <div className="service-grid-bottom flex flex-wrap items-center gap-5">
+                <div className="w-full max-w-full md:max-w-[620px] lg:max-w-[460px] h-[300px] bg-[#FDEFDD] p-4 flex flex-col justify-between">
+                  <p className="text-[12px] text-secondary">04</p>
+                  <div className="flex flex-col gap-5 pb-5">
+                    <p className="text-[18px]">Social Media Kick-Start</p>
+                    <p className="text-[12px] text-secondary max-w-[350px]">
+                      We ignite audience growth with a 30-day custom content
+                      campaign for your social channels.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="w-full max-w-full md:max-w-[620px] lg:max-w-[460px] h-[300px] bg-primary p-4 flex flex-col justify-between">
+                  <p className="text-[12px] text-white">05</p>
+                  <div className="flex flex-col gap-5 pb-5">
+                    <p className="text-[18px] text-white">
+                      Custom Web Software & SaaS
+                    </p>
+                    <p className="text-[12px] text-stone-200 max-w-[350px]">
+                      We engineer robust, data-driven web applications and
+                      custom software for complex business needs.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </section>
 
       <section className="work-section mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
@@ -241,7 +204,144 @@ const Hero = () => {
           </a>
         </div>
         <div className="projet-grid flex flex-wrap lg:flex-nowrap gap-5">
-          <div className="project-card-1 p-4 sm:p-8 flex flex-col justify-between gap-2 max-w-[586px] bg-[#F8FAFC] [clip-path:polygon(0_0,35%_0,45%_10%,100%_10%,100%_100%,0_100%)]">
+          <div className="project-card-1 flex-1 py-6 flex flex-col gap-2 max-w-[500px] bg-[#F8FAFC]">
+            <div className="top relative">
+              <div className="flex pl-5 sm:pl-10 items-center gap-2.5 text-[12px] text-secondary">
+                <span>Kickxwear</span>
+                <span className="text-[10px] text-slate-300">•</span>
+                <span>E-Commerce</span>
+
+                {/* Minimal dot separator */}
+                <span className="text-[10px] text-slate-300">•</span>
+
+                <div className="flex items-center gap-1.5">
+                  <span>Live</span>
+
+                  {/* Blinking "Live" Indicator */}
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                  </span>
+                </div>
+              </div>
+              <div className="max-w-[350px]">
+                <Image src={kickxwear} alt="kickxwear"></Image>
+              </div>
+              <div className="absolute bottom-0 w-full h-[120px] backdrop-blur-md bg-white/20 [mask-image:linear-gradient(to_bottom,transparent_0%,black_100%)] pointer-events-none z-10"></div>
+            </div>
+
+            <div className="bottom px-5 sm:px-10 ">
+              {/* <div className="w-full h-[1px] bg-secondary/50"></div> */}
+              <div className="wrapper">
+                <div>
+                  <p className="text-[24px] sm:text-[32px]">
+                    High-Performance Digital Storefront
+                  </p>
+                </div>
+                <div className="mt-2">
+                  <p className="text-secondary text-[14px] sm:text-[16px]">
+                    Features a proprietary, role-isolated admin dashboard for
+                    real-time inventory control and a bespoke analytics engine
+                    tracking precise user click journeys. We bypassed
+                    traditional payment gateways in favor of a streamlined,
+                    direct-to-WhatsApp sales funnel, backed by flawless
+                    technical SEO with 100% index crawlability.
+                  </p>
+                </div>
+              </div>
+              <div className="card-footer flex flex-col gap-8 mt-8">
+                <div className="flex gap-5 text-[10px] text-secondary">
+                  <span className="border p-1 border-secondary">
+                    Next.js Architecture
+                  </span>
+                  <span className="border p-1 border-secondary">
+                    Proprietary Analytics Engine
+                  </span>
+                  <span className="border p-1 border-secondary">
+                    Live in production
+                  </span>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    className="text-secondary text-[14px] sm:text-[16px]"
+                  >
+                    Read the case study &rarr;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="project-card-2 flex-1 py-6 flex flex-col gap-2 max-w-[500px] bg-[#F8FAFC]">
+            <div className="top relative">
+              <div className="flex pl-5 sm:pl-10 items-center gap-2.5 text-[12px] text-secondary">
+                <span>Oasistrends</span>
+                <span className="text-[10px] text-slate-300">•</span>
+                <span>E-Commerce</span>
+
+                {/* Minimal dot separator */}
+                <span className="text-[10px] text-slate-300">•</span>
+
+                <div className="flex items-center gap-1.5">
+                  <span>Live</span>
+
+                  {/* Blinking "Live" Indicator */}
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                  </span>
+                </div>
+              </div>
+              <div className="max-w-[350px]">
+                <Image src={oasistrends} alt="kickxwear"></Image>
+              </div>
+              <div className="absolute bottom-0 w-full h-[120px] backdrop-blur-md bg-white/20 [mask-image:linear-gradient(to_bottom,transparent_0%,black_100%)] pointer-events-none z-10"></div>
+            </div>
+
+            <div className="bottom px-5 sm:px-10 ">
+              {/* <div className="w-full h-[1px] bg-secondary/50"></div> */}
+              <div className="wrapper">
+                <div>
+                  <p className="text-[24px] sm:text-[32px]">
+                    High-Performance Digital Storefront
+                  </p>
+                </div>
+                <div className="mt-2">
+                  <p className="text-secondary text-[14px] sm:text-[16px]">
+                    Features a proprietary, role-isolated admin dashboard for
+                    real-time inventory control and a bespoke analytics engine
+                    tracking precise user click journeys. We bypassed
+                    traditional payment gateways in favor of a streamlined,
+                    direct-to-WhatsApp sales funnel, backed by flawless
+                    technical SEO with 100% index crawlability.
+                  </p>
+                </div>
+              </div>
+              <div className="card-footer flex flex-col gap-8 mt-8">
+                <div className="flex gap-5 text-[10px] text-secondary">
+                  <span className="border p-1 border-secondary">
+                    Next.js Architecture
+                  </span>
+                  <span className="border p-1 border-secondary">
+                    Proprietary Analytics Engine
+                  </span>
+                  <span className="border p-1 border-secondary">
+                    Live in production
+                  </span>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    className="text-secondary text-[14px] sm:text-[16px]"
+                  >
+                    Read the case study &rarr;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* <div className="project-card-2 p-4 sm:p-8 flex flex-col justify-between gap-2 max-w-[586px] bg-[#F8FAFC] [clip-path:polygon(0_0,35%_0,45%_10%,100%_10%,100%_100%,0_100%)]">
             <div className="card-top">
               <div>
                 <p className="text-[12px] text-secondary">E-Commerce</p>
@@ -289,153 +389,115 @@ const Hero = () => {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="project-card-2 p-4 sm:p-8 flex flex-col justify-between gap-2 max-w-[586px] bg-[#F8FAFC] [clip-path:polygon(0_0,35%_0,45%_10%,100%_10%,100%_100%,0_100%)]">
-            <div className="card-top">
-              <div>
-                <p className="text-[12px] text-secondary">E-Commerce</p>
-              </div>
-              <div className="mt-8">
-                <p className="text-[24px] sm:text-[38px]">
-                  High-Performance Digital Storefront
-                </p>
-              </div>
-              <div>
-                <p className="text-[14px] sm:text-[18px] text-secondary italic">
-                  Engineered for maximum visibility and frictionless conversion
-                  for premium athletic gear.
-                </p>
-              </div>
-              <div className="mt-8">
-                <p className="text-secondary text-[14px] sm:text-[18px]">
-                  Features a proprietary, role-isolated admin dashboard for
-                  real-time inventory control and a bespoke analytics engine
-                  tracking precise user click journeys. We bypassed traditional
-                  payment gateways in favor of a streamlined, direct-to-WhatsApp
-                  sales funnel, backed by flawless technical SEO with 100% index
-                  crawlability.
-                </p>
-              </div>
-            </div>
-            <div className="card-bottom flex flex-col gap-8 mt-8">
-              <div className="flex gap-5 text-[10px] text-secondary">
-                <span className="border p-1 border-secondary">
-                  Next.js Architecture
-                </span>
-                <span className="border p-1 border-secondary">
-                  Proprietary Analytics Engine
-                </span>
-                <span className="border p-1 border-secondary">
-                  Live in production
-                </span>
-              </div>
-              <div>
-                <a
-                  href="#"
-                  className="text-secondary text-[14px] sm:text-[18px]"
-                >
-                  Read the case study &rarr;
-                </a>
-              </div>
-            </div>
-          </div>
+          </div> */}
+
+          {/* <div className="card-container w-full bg-[#F8FAFC]">
+           <div className="left">
+
+           </div>
+           <div className="right">
+
+           </div>
+          </div> */}
         </div>
       </section>
 
       <section className="plan-section bg-[#F8FAFC]">
         <div className="mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
-        <div>
-          <p className="uppercase text-secondary text-[12px]">how we start</p>
-        </div>
-        <div className="flex flex-col md:flex-row gap-8 py-8">
-          <div className="flex-1 justify-between flex flex-col gap-12 pb-2">
-            <div className="flex flex-col gap-5">
-              <p className="text-primary text-[36px] sm:text-[50px] max-w-[706px] leading-[1.2] font-[140]">
-                Plan first. Build second.
-              </p>
-              <p className="text-[20px] max-w-[350px] text-secondary">
-                We start by simplifying your vision. Next, we map out the exact
-                steps to get there. Then, we build a fast, high-quality version
-                of your product so you can test it with the real world before
-                committing to the next phase.
-              </p>
-            </div>
-            <button className="bg-primary text-white w-[136px] h-[40px] cursor-pointer transition-colors">
-              Start a project
-            </button>
+          <div>
+            <p className="uppercase text-secondary text-[12px]">how we start</p>
           </div>
+          <div className="flex flex-col md:flex-row gap-8 py-8">
+            <div className="flex-1 justify-between flex flex-col gap-12 pb-2">
+              <div className="flex flex-col gap-5">
+                <p className="text-primary text-[36px] sm:text-[50px] max-w-[706px] leading-[1.2] font-[140]">
+                  Plan first. Build second.
+                </p>
+                <p className="text-[20px] max-w-[350px] text-secondary">
+                  We start by simplifying your vision. Next, we map out the
+                  exact steps to get there. Then, we build a fast, high-quality
+                  version of your product so you can test it with the real world
+                  before committing to the next phase.
+                </p>
+              </div>
+              <button className="bg-primary text-white w-[136px] h-[40px] cursor-pointer transition-colors">
+                Start a project
+              </button>
+            </div>
 
-          {/* sadfsdf */}
-          <div className="flex-1 py-2 mt-5 md:mt-0">
-            <div className="relative">
-              {/* Continuous Vertical Line */}
-              <div className="absolute left-[9px] top-0 bottom-0 w-[2px] bg-secondary/50"></div>
+            {/* sadfsdf */}
+            <div className="flex-1 py-2 mt-5 md:mt-0">
+              <div className="relative">
+                {/* Continuous Vertical Line */}
+                <div className="absolute left-[9px] top-0 bottom-0 w-[2px] bg-secondary/50"></div>
 
-              {/* Timeline Items Container */}
-              <div className="flex flex-col gap-8">
-                {/* Step 1 */}
-                <div className="relative flex items-start gap-6">
-                  <div className="relative z-10 w-[20px] h-[20px] bg-primary shrink-0"></div>
-                  <div className="flex flex-col gap-2.5">
-                    <p className="text-[12px] uppercase tracking-wider text-secondary">
-                      DAY 1
-                    </p>
-                    <h3 className="text-[20px] leading-none">Discovery call</h3>
-                    <p className="text-[16px] text-secondary leading-relaxed">
-                      30 minutes this week. No slides. No pitch deck.
-                    </p>
+                {/* Timeline Items Container */}
+                <div className="flex flex-col gap-8">
+                  {/* Step 1 */}
+                  <div className="relative flex items-start gap-6">
+                    <div className="relative z-10 w-[20px] h-[20px] bg-primary shrink-0"></div>
+                    <div className="flex flex-col gap-2.5">
+                      <p className="text-[12px] uppercase tracking-wider text-secondary">
+                        DAY 1
+                      </p>
+                      <h3 className="text-[20px] leading-none">
+                        Discovery call
+                      </h3>
+                      <p className="text-[16px] text-secondary leading-relaxed">
+                        30 minutes this week. No slides. No pitch deck.
+                      </p>
+                    </div>
                   </div>
-                </div>
 
-                {/* Step 2 */}
-                <div className="relative flex items-start gap-6">
-                  <div className="relative z-10 w-[20px] h-[20px] bg-primary shrink-0"></div>
-                  <div className="flex flex-col gap-2.5">
-                    <p className="text-[12px] uppercase tracking-wider text-secondary">
-                      WITHIN 3 BUSINESS DAYS
-                    </p>
-                    <h3 className="text-[20px] leading-none">
-                      Scope & proposal
-                    </h3>
-                    <p className="text-[16px] text-secondary leading-relaxed">
-                      A plan you can build with us — or with anyone else.
-                    </p>
+                  {/* Step 2 */}
+                  <div className="relative flex items-start gap-6">
+                    <div className="relative z-10 w-[20px] h-[20px] bg-primary shrink-0"></div>
+                    <div className="flex flex-col gap-2.5">
+                      <p className="text-[12px] uppercase tracking-wider text-secondary">
+                        WITHIN 3 BUSINESS DAYS
+                      </p>
+                      <h3 className="text-[20px] leading-none">
+                        Scope & proposal
+                      </h3>
+                      <p className="text-[16px] text-secondary leading-relaxed">
+                        A plan you can build with us — or with anyone else.
+                      </p>
+                    </div>
                   </div>
-                </div>
 
-                {/* Step 3 */}
-                <div className="relative flex items-start gap-6">
-                  <div className="relative z-10 w-[20px] h-[20px] bg-primary shrink-0"></div>
-                  <div className="flex flex-col gap-2.5">
-                    <p className="text-[12px] uppercase tracking-wider text-secondary">
-                      WEEK 1
-                    </p>
-                    <h3 className="text-[20px] leading-none">Kickoff</h3>
-                    <p className="text-[16px] text-secondary leading-relaxed">
-                      Team in place, infra up, first code in main.
-                    </p>
+                  {/* Step 3 */}
+                  <div className="relative flex items-start gap-6">
+                    <div className="relative z-10 w-[20px] h-[20px] bg-primary shrink-0"></div>
+                    <div className="flex flex-col gap-2.5">
+                      <p className="text-[12px] uppercase tracking-wider text-secondary">
+                        WEEK 1
+                      </p>
+                      <h3 className="text-[20px] leading-none">Kickoff</h3>
+                      <p className="text-[16px] text-secondary leading-relaxed">
+                        Team in place, infra up, first code in main.
+                      </p>
+                    </div>
                   </div>
-                </div>
 
-                {/* Step 4 */}
-                <div className="relative flex items-start gap-6">
-                  <div className="relative z-10 w-[20px] h-[20px] bg-primary shrink-0"></div>
-                  <div className="flex flex-col gap-2.5">
-                    <p className="text-[12px] uppercase tracking-wider text-secondary">
-                      WEEK 3
-                    </p>
-                    <h3 className="text-[20px] leading-none">
-                      First working demo
-                    </h3>
-                    <p className="text-[16px] text-secondary leading-relaxed">
-                      Something you can click on. Not a Figma link.
-                    </p>
+                  {/* Step 4 */}
+                  <div className="relative flex items-start gap-6">
+                    <div className="relative z-10 w-[20px] h-[20px] bg-primary shrink-0"></div>
+                    <div className="flex flex-col gap-2.5">
+                      <p className="text-[12px] uppercase tracking-wider text-secondary">
+                        WEEK 3
+                      </p>
+                      <h3 className="text-[20px] leading-none">
+                        First working demo
+                      </h3>
+                      <p className="text-[16px] text-secondary leading-relaxed">
+                        Something you can click on. Not a Figma link.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
         </div>
       </section>
 
@@ -468,7 +530,8 @@ const Hero = () => {
           </div>
           <div className="max-w-[605px]">
             <p className="text-[22px] text-secondary">
-              We reply within one business day. Discovery calls this week. Small pilots welcome.
+              We reply within one business day. Discovery calls this week. Small
+              pilots welcome.
             </p>
           </div>
           <div className="pt-4 flex flex-col md:flex-row items-start gap-5">
@@ -481,8 +544,6 @@ const Hero = () => {
           </div>
         </div>
       </section>
-
-      
     </>
   );
 };
