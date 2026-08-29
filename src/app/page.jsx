@@ -3,9 +3,9 @@
 import { useState, useEffect } from "react";
 
 import TestimonialMarquee from "./components/TestimonialMarquee";
-import Image from "next/image";
 import kickxwear from "./assets/kickxwear-card.png";
 import oasistrends from "./assets/oasistrends-card.png";
+import PremiumCard from "./components/PremiumCard";
 
 const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -36,6 +36,37 @@ const Hero = () => {
         return "";
     }
   };
+
+  const cardInfo = [
+    {
+      id: "01",
+      titleTop: ["Kickxwear", "E-Commerce", "Live"],
+      imageUrl: kickxwear,
+      title: "High-Performance Digital Storefront",
+      description:
+        "Features a proprietary, role-isolated admin dashboard for real-time inventory control and a bespoke analytics engine tracking precise user click journeys. We bypassed traditional payment gateways in favor of a streamlined, direct-to-WhatsApp sales funnel, backed by flawless technical SEO with 100% index crawlability",
+      features: [
+        "Next.js Architecture",
+        "Proprietary Analytics Engine",
+        "Live in production",
+      ],
+      redirectLink: "shiftweb/work/kickxwear",
+    },
+    {
+      id: "02",
+      titleTop: ["Oasis Trends", "Corporate Showcase", "Live"],
+      imageUrl: oasistrends,
+      title: "Single-Page Digital Presence & B2B Catalog",
+      description:
+        "A high-performance static architecture designed to establish a premium digital footprint. Features a streamlined, read-only product catalog showcasing bulk inventory without the overhead of transactional e-commerce infrastructure, ensuring lightning-fast load times and seamless navigation.",
+      features: [
+        "Single-Page Architecture",
+        "Static Generation",
+        "Live in production",
+      ],
+      redirectLink: "shiftweb/work/oasistrends",
+    },
+  ];
 
   return (
     <>
@@ -203,202 +234,10 @@ const Hero = () => {
             View all case studies &rarr;
           </a>
         </div>
-        <div className="projet-grid flex flex-wrap lg:flex-nowrap gap-5">
-          <div className="project-card-1 flex-1 py-6 flex flex-col gap-2 max-w-[500px] bg-[#F8FAFC]">
-            <div className="top relative">
-              <div className="flex pl-5 sm:pl-10 items-center gap-2.5 text-[12px] text-secondary">
-                <span>Kickxwear</span>
-                <span className="text-[10px] text-slate-300">•</span>
-                <span>E-Commerce</span>
-
-                {/* Minimal dot separator */}
-                <span className="text-[10px] text-slate-300">•</span>
-
-                <div className="flex items-center gap-1.5">
-                  <span>Live</span>
-
-                  {/* Blinking "Live" Indicator */}
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                  </span>
-                </div>
-              </div>
-              <div className="max-w-[350px]">
-                <Image src={kickxwear} alt="kickxwear"></Image>
-              </div>
-              <div className="absolute bottom-0 w-full h-[120px] backdrop-blur-md bg-white/20 [mask-image:linear-gradient(to_bottom,transparent_0%,black_100%)] pointer-events-none z-10"></div>
-            </div>
-
-            <div className="bottom px-5 sm:px-10 ">
-              {/* <div className="w-full h-[1px] bg-secondary/50"></div> */}
-              <div className="wrapper">
-                <div>
-                  <p className="text-[24px] sm:text-[32px]">
-                    High-Performance Digital Storefront
-                  </p>
-                </div>
-                <div className="mt-2">
-                  <p className="text-secondary text-[14px] sm:text-[16px]">
-                    Features a proprietary, role-isolated admin dashboard for
-                    real-time inventory control and a bespoke analytics engine
-                    tracking precise user click journeys. We bypassed
-                    traditional payment gateways in favor of a streamlined,
-                    direct-to-WhatsApp sales funnel, backed by flawless
-                    technical SEO with 100% index crawlability.
-                  </p>
-                </div>
-              </div>
-              <div className="card-footer flex flex-col gap-8 mt-8">
-                <div className="flex gap-5 text-[10px] text-secondary">
-                  <span className="border p-1 border-secondary">
-                    Next.js Architecture
-                  </span>
-                  <span className="border p-1 border-secondary">
-                    Proprietary Analytics Engine
-                  </span>
-                  <span className="border p-1 border-secondary">
-                    Live in production
-                  </span>
-                </div>
-                <div>
-                  <a
-                    href="#"
-                    className="text-secondary text-[14px] sm:text-[16px]"
-                  >
-                    Read the case study &rarr;
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="project-card-2 flex-1 py-6 flex flex-col gap-2 max-w-[500px] bg-[#F8FAFC]">
-            <div className="top relative">
-              <div className="flex pl-5 sm:pl-10 items-center gap-2.5 text-[12px] text-secondary">
-                <span>Oasistrends</span>
-                <span className="text-[10px] text-slate-300">•</span>
-                <span>E-Commerce</span>
-
-                {/* Minimal dot separator */}
-                <span className="text-[10px] text-slate-300">•</span>
-
-                <div className="flex items-center gap-1.5">
-                  <span>Live</span>
-
-                  {/* Blinking "Live" Indicator */}
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                  </span>
-                </div>
-              </div>
-              <div className="max-w-[350px]">
-                <Image src={oasistrends} alt="kickxwear"></Image>
-              </div>
-              <div className="absolute bottom-0 w-full h-[120px] backdrop-blur-md bg-white/20 [mask-image:linear-gradient(to_bottom,transparent_0%,black_100%)] pointer-events-none z-10"></div>
-            </div>
-
-            <div className="bottom px-5 sm:px-10 ">
-              {/* <div className="w-full h-[1px] bg-secondary/50"></div> */}
-              <div className="wrapper">
-                <div>
-                  <p className="text-[24px] sm:text-[32px]">
-                    High-Performance Digital Storefront
-                  </p>
-                </div>
-                <div className="mt-2">
-                  <p className="text-secondary text-[14px] sm:text-[16px]">
-                    Features a proprietary, role-isolated admin dashboard for
-                    real-time inventory control and a bespoke analytics engine
-                    tracking precise user click journeys. We bypassed
-                    traditional payment gateways in favor of a streamlined,
-                    direct-to-WhatsApp sales funnel, backed by flawless
-                    technical SEO with 100% index crawlability.
-                  </p>
-                </div>
-              </div>
-              <div className="card-footer flex flex-col gap-8 mt-8">
-                <div className="flex gap-5 text-[10px] text-secondary">
-                  <span className="border p-1 border-secondary">
-                    Next.js Architecture
-                  </span>
-                  <span className="border p-1 border-secondary">
-                    Proprietary Analytics Engine
-                  </span>
-                  <span className="border p-1 border-secondary">
-                    Live in production
-                  </span>
-                </div>
-                <div>
-                  <a
-                    href="#"
-                    className="text-secondary text-[14px] sm:text-[16px]"
-                  >
-                    Read the case study &rarr;
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* <div className="project-card-2 p-4 sm:p-8 flex flex-col justify-between gap-2 max-w-[586px] bg-[#F8FAFC] [clip-path:polygon(0_0,35%_0,45%_10%,100%_10%,100%_100%,0_100%)]">
-            <div className="card-top">
-              <div>
-                <p className="text-[12px] text-secondary">E-Commerce</p>
-              </div>
-              <div className="mt-8">
-                <p className="text-[24px] sm:text-[38px]">
-                  High-Performance Digital Storefront
-                </p>
-              </div>
-              <div>
-                <p className="text-[14px] sm:text-[18px] text-secondary italic">
-                  Engineered for maximum visibility and frictionless conversion
-                  for premium athletic gear.
-                </p>
-              </div>
-              <div className="mt-8">
-                <p className="text-secondary text-[14px] sm:text-[18px]">
-                  Features a proprietary, role-isolated admin dashboard for
-                  real-time inventory control and a bespoke analytics engine
-                  tracking precise user click journeys. We bypassed traditional
-                  payment gateways in favor of a streamlined, direct-to-WhatsApp
-                  sales funnel, backed by flawless technical SEO with 100% index
-                  crawlability.
-                </p>
-              </div>
-            </div>
-            <div className="card-bottom flex flex-col gap-8 mt-8">
-              <div className="flex gap-5 text-[10px] text-secondary">
-                <span className="border p-1 border-secondary">
-                  Next.js Architecture
-                </span>
-                <span className="border p-1 border-secondary">
-                  Proprietary Analytics Engine
-                </span>
-                <span className="border p-1 border-secondary">
-                  Live in production
-                </span>
-              </div>
-              <div>
-                <a
-                  href="#"
-                  className="text-secondary text-[14px] sm:text-[18px]"
-                >
-                  Read the case study &rarr;
-                </a>
-              </div>
-            </div>
-          </div> */}
-
-          {/* <div className="card-container w-full bg-[#F8FAFC]">
-           <div className="left">
-
-           </div>
-           <div className="right">
-
-           </div>
-          </div> */}
+        <div className="projet-grid flex flex-wrap justify-between gap-5 lg:flex-nowrap">
+          {cardInfo.map((info, index) => (
+            <PremiumCard key={index} info={info} />
+          ))}
         </div>
       </section>
 
