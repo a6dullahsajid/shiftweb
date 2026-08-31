@@ -1,8 +1,8 @@
-import kickxwear from "../assets/kickxwear-card.png";
-import oasistrends from "../assets/oasistrends-card.png";
+import kickxwear from "../assets/kickxwear-card-white.png";
+import oasistrends from "../assets/oasistrends-card-white.png";
 import PremiumCard from "../components/PremiumCard.jsx";
-import vanlife from "../assets/vanlife-card.png";
-import spendwise from "../assets/spendwise-card.png";
+import vanlife from "../assets/vanlife-card-white.png";
+import spendwise from "../assets/spendwise-card-white.png";
 import Cta from "../components/Cta";
 
 // const projects = [

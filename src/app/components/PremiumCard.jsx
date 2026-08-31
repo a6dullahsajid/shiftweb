@@ -22,7 +22,7 @@ const ProjectCard = ({ info }) => {
             </span>
           </div>
         </div>
-        <div className="max-w-[350px]">
+        <div className="max-w-[350px] my-5 mx-10">
           <Image src={info.imageUrl} alt={info.title} />
         </div>
         <div className="absolute bottom-0 w-full h-[120px] backdrop-blur-md bg-white/20 [mask-image:linear-gradient(to_bottom,transparent_0%,black_100%)] pointer-events-none z-10"></div>
