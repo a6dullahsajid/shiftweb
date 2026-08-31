@@ -235,7 +235,7 @@ const Hero = () => {
             View all case studies &rarr;
           </a>
         </div>
-        <div className="projet-grid flex flex-wrap justify-between gap-5 lg:flex-nowrap">
+        <div className="projet-grid flex flex-wrap justify-between gap-5 md:flex-nowrap">
           {cardInfo.map((info, index) => (
             <PremiumCard key={index} info={info} />
           ))}

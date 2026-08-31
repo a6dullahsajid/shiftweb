@@ -121,7 +121,7 @@ export default function WorkPage() {
           the client.
         </p>
       </div>
-      <div className="projet-grid grid grid-cols-1 lg:grid-cols-2 gap-5">
+      <div className="projet-grid grid grid-cols-1 md:grid-cols-2 gap-5">
         {cardInfo.map((info, index) => (
           <PremiumCard key={index} info={info} />
         ))}
