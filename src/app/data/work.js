@@ -1,4 +1,4 @@
-import kickxwearImage from "../assets/kickxwear.png";
+import kickxwearImage from "../assets/kickxwear-card-white.png";
 import oasisTrendsImage from "../assets/oasistrends.png";
 import portexaImage from "../assets/portexa.png";
 

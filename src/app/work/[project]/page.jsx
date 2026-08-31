@@ -47,29 +47,29 @@ export default async function ProjectPage({ params }) {
 
   const nextProject =
     projects[(currentIndex + 1) % projects.length];
+    const nextProject2 =
+    projects[(currentIndex + 2) % projects.length];
 
   return (
-    <main className="min-h-screen bg-white text-black">
-      <section className="mx-auto px-6 pb-20 pt-24 md:px-10 lg:px-16">
+    <main className=" text-black mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+      
+      <section>
 
-        {/* Top line */}
-        <div className="flex items-center justify-between border-b border-slate-200 pb-5">
-
-          <span className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">
-            {data.category}
-          </span>
-
-          <span className="text-sm text-slate-400">
-            {String(currentIndex + 1).padStart(2, "0")} /{" "}
-            {String(projects.length).padStart(2, "0")}
-          </span>
-
-        </div>
+      
+       <div className="Navbar flex gap-2 text-[12px] text-secondary"> 
+       <Link href={"/"}><p className="hover:text-black">Home</p></Link>
+       <p>/</p>
+       <Link href={"/work"}><p className="hover:text-black">Work</p></Link>
+       <p>/</p>
+       <p className="text-black">{data.title}</p>
+       </div>
 
 
         {/* Title + description */}
-        <div className="grid grid-cols-1 gap-8 py-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
-
+        <div className="flex justify-between align-top my-15 gap-10">
+        
+        <div className="pb-2 left flex flex-col justify-between">
+          <div>
           <div>
 
             <h1
@@ -90,13 +90,13 @@ export default async function ProjectPage({ params }) {
           </div>
 
 
-          <div className="max-w-xl lg:pb-1">
+          <div className="max-w-xl lg:pb-1 mt-5 ">
 
-            <p className="text-lg leading-8 text-slate-500">
+            <p className="text-lg max-w-[516px] leading-8 text-secondary">
               {data.shortDescription}
             </p>
 
-            <div className="mt-5 flex flex-wrap gap-x-2 text-sm text-slate-500">
+            <div className="mt-5 flex flex-wrap gap-x-2 text-sm text-secondary">
 
               {data.services.map((service, index) => (
                 <span key={service}>
@@ -113,57 +113,9 @@ export default async function ProjectPage({ params }) {
             </div>
 
           </div>
-
-        </div>
-        <div className="relative mt-4">
-
-          {/* Blue offset */}
-          <div
-            className="
-              absolute
-              -bottom-5
-              -right-4
-              h-[80%]
-              w-[65%]
-              bg-primary/0
-              md:-bottom-8
-              md:-right-7
-            "
-          />
-
-          <div
-            className="
-              absolute  
-              -bottom-3
-              -right-2
-              h-[80%]
-              w-[65%]
-              bg-[#5A74FF]/0
-              md:-bottom-5
-              md:-right-4
-            "
-          />
-
-          {/* Actual project */}
-          <div className="relative aspect-[16/9] overflow-hidden border border-slate-200 bg-slate-100">
-
-            <Image
-              src={data.image}
-              alt={`${data.title} website`}
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 1400px"
-              className="object-cover"
-            />
-
           </div>
 
-        </div>
-
-
-        {/* CTA directly below image */}
-
-        {data.links.live && (
+          {data.links.live && (
           <div className="mt-8">
 
             <a
@@ -189,7 +141,34 @@ export default async function ProjectPage({ params }) {
             </a>
 
           </div>
-        )}
+        )} 
+
+        </div>
+        
+        
+
+
+          {/* Actual project */}
+          <div className="max-w-[450px]">
+
+            <Image
+              src={data.image}
+              alt={`${data.title} website`}
+              
+            />
+
+            {/* <div className="absolute bottom-0 w-full h-[120px] backdrop-blur-md bg-white/20 [mask-image:linear-gradient(to_bottom,transparent_0%,black_100%)] pointer-events-none z-10"></div> */}
+
+          </div>
+
+          </div>
+
+      
+
+
+       
+
+        
 
       </section>
 
@@ -252,6 +231,7 @@ export default async function ProjectPage({ params }) {
         </div>
 
       </section>
+
       <section className="mx-auto px-6 py-24 md:px-10 lg:px-16">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.7fr_1.3fr]">
 
@@ -459,6 +439,11 @@ export default async function ProjectPage({ params }) {
 
             <h2 className="text-5xl font-semibold tracking-tight md:text-7xl">
               {nextProject.title}
+              <span className="text-white/50">.</span>
+            </h2>
+
+            <h2 className="text-5xl font-semibold tracking-tight md:text-7xl">
+              {nextProject2.title}
               <span className="text-white/50">.</span>
             </h2>
 
