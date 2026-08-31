@@ -63,17 +63,17 @@ export default async function ProjectPage({ params }) {
               <div>
                 <h1
                   className="
-                text-5xl
+                text-4xl
                 font-semibold
                 leading-[0.95]
                 tracking-[-0.04em]
-                sm:text-5xl
-                md:text-6xl
+                sm:text-4xl
+                md:text-5xl
                 lg:text-[76px]
               "
                 >
                   {data.title}
-                  <span className="inline-block w-2 h-2 bg-primary"></span>
+                  <span className="inline-block w-2 h-2 bg-primary ml-1"></span>
                 </h1>
               </div>
 

@@ -1,6 +1,7 @@
 import kickxwearImage from "../assets/kickxwear-card-white.png";
-import oasisTrendsImage from "../assets/oasistrends.png";
-import portexaImage from "../assets/portexa.png";
+import oasisTrendsImage from "../assets/oasistrends-card-white.png";
+import vanlifeImage from "../assets/vanlife-card-white.png";
+import spendwiseImage from "../assets/spendwise-card-white.png";
 
 const projects = [
   {
@@ -156,9 +157,9 @@ const projects = [
   },
 
   {
-    id: "portexa",
-    title: "Portexa",
-    slug: "portexa",
+    id: "vanlife",
+    title: "Vanlife",
+    slug: "vanlife",
 
     category: "Website",
     projectType: "Business Website",
@@ -167,7 +168,7 @@ const projects = [
     shortDescription:
       "A modern business website focused on clarity, performance and presenting the brand professionally online.",
 
-    image: portexaImage,
+    image: vanlifeImage,
 
     services: [
       "UI/UX Design",
@@ -212,14 +213,14 @@ const projects = [
     ],
 
     seo: {
-      title: "Portexa Website Development | Shift Web",
+      title: "Vanlife Website Development | Shift Web",
 
       description:
-        "Explore how Shift Web designed and developed a modern business website for Portexa with responsive design, performance and SEO in mind.",
+        "Explore how Shift Web designed and developed a modern business website for Vanlife with responsive design, performance and SEO in mind.",
 
       keywords: [
-        "Portexa website",
-        "Portexa web development",
+        "Vanlife website",
+        "Vanlife web development",
         "business website development",
         "Next.js website development",
         "Shift Web portfolio",
@@ -227,8 +228,84 @@ const projects = [
     },
 
     links: {
-      live: "https://portexa.vercel.app/",
-      caseStudy: "/work/portexa",
+      live: "https://tryvanlife.netlify.app/",
+      caseStudy: "/work/vanlife",
+    },
+  },
+  {
+    id: "spendwise",
+    title: "Spendwise",
+    slug: "spendwise",
+
+    category: "Website",
+    projectType: "Business Website",
+    year: "2026",
+
+    shortDescription:
+      "A modern business website focused on clarity, performance and presenting the brand professionally online.",
+
+    image: spendwiseImage,
+
+    services: [
+      "UI/UX Design",
+      "Web Development",
+      "SEO",
+    ],
+
+    problem: [
+      "The business needed a stronger and more professional online presence.",
+      "Important information needed to be presented clearly to potential customers.",
+      "The website needed to provide a responsive experience across devices.",
+    ],
+
+    solution: [
+      "Designed a clean interface with a clear content hierarchy.",
+      "Developed responsive pages optimized for different screen sizes.",
+      "Structured the website around clear navigation and calls to action.",
+      "Implemented an SEO-friendly technical foundation.",
+    ],
+
+    features: [
+      "Responsive design",
+      "Modern UI",
+      "Clear navigation",
+      "Call-to-action focused sections",
+      "SEO-friendly structure",
+      "Performance-focused development",
+    ],
+
+    techStack: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "JavaScript",
+    ],
+
+    results: [
+      "Stronger online presence",
+      "Clearer presentation of the business",
+      "Responsive user experience",
+      "SEO-ready website foundation",
+    ],
+
+    seo: {
+      title: "Spendwise Website Development | Shift Web",
+
+      description:
+        "Explore how Shift Web designed and developed a modern business website for Spendwise with responsive design, performance and SEO in mind.",
+
+      keywords: [
+        "Spendwise website",
+        "Spendwise web development",
+        "business website development",
+        "Next.js website development",
+        "Shift Web portfolio",
+      ],
+    },
+
+    links: {
+      live: "https://spendwise-mqxp.onrender.com/",
+      caseStudy: "/work/spendwise",
     },
   },
 ];
