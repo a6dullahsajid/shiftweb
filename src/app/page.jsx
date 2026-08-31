@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 
 import TestimonialMarquee from "./components/TestimonialMarquee";
-import kickxwear from "./assets/kickxwear-card.png";
-import oasistrends from "./assets/oasistrends-card.png";
+import kickxwear from "./assets/kickxwear-card-white.png";
+import oasistrends from "./assets/oasistrends-card-white.png";
 import PremiumCard from "./components/PremiumCard";
 import Cta from "./components/Cta";
 
@@ -235,7 +235,7 @@ const Hero = () => {
             View all case studies &rarr;
           </a>
         </div>
-        <div className="projet-grid flex flex-wrap justify-between gap-5 md:flex-nowrap">
+        <div className="projet-grid grid grid-cols-1 md:grid-cols-2 gap-5">
           {cardInfo.map((info, index) => (
             <PremiumCard key={index} info={info} />
           ))}

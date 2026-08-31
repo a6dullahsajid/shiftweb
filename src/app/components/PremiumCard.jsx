@@ -2,7 +2,8 @@ import Image from "next/image";
 
 const ProjectCard = ({ info }) => {
   return (
-    <div className="project-card-1 py-6 flex flex-col gap-2 w-full bg-[#F8FAFC]">
+    <div className="project-card-1 py-6 flex flex-col justify-between gap-2 w-full bg-[#F8FAFC]">
+      <div>
       <div className="top relative">
         <div className="flex pl-5 sm:pl-10 items-center gap-2.5 text-[12px] text-secondary">
           <span>{info.titleTop[0]}</span>
@@ -28,7 +29,7 @@ const ProjectCard = ({ info }) => {
         <div className="absolute bottom-0 w-full h-[120px] backdrop-blur-md bg-white/20 [mask-image:linear-gradient(to_bottom,transparent_0%,black_100%)] pointer-events-none z-10"></div>
       </div>
 
-      <div className="bottom px-5 sm:px-10 ">
+      <div className="bottom px-5 sm:px-10 flex flex-col">
         <div className="wrapper">
           <div>
             <p className="text-[24px] sm:text-[32px]">{info.title}</p>
@@ -39,7 +40,11 @@ const ProjectCard = ({ info }) => {
             </p>
           </div>
         </div>
-        <div className="card-footer flex flex-col gap-8 mt-8">
+        
+      </div>
+      </div>
+
+      <div className="card-footer flex flex-col gap-8 mt-8 px-5 sm:px-10 ">
           <div className="flex gap-5 text-[10px] text-secondary">
             {/* Map through features dynamically instead of hardcoding indexes */}
             {info.features.map((feature, i) => (
@@ -54,7 +59,6 @@ const ProjectCard = ({ info }) => {
             </a>
           </div>
         </div>
-      </div>
     </div>
   );
 };
