@@ -203,12 +203,12 @@ const Hero = () => {
                 </div>
 
                 <div className="w-full max-w-full md:max-w-[620px] lg:max-w-[460px] h-[300px] bg-primary p-4 flex flex-col justify-between">
-                  <p className="text-[12px] text-white">05</p>
+                  <p className="text-[12px] text-slate-300">05</p>
                   <div className="flex flex-col gap-5 pb-5">
                     <p className="text-[18px] text-white">
                       Custom Web Software & SaaS
                     </p>
-                    <p className="text-[12px] text-stone-200 max-w-[350px]">
+                    <p className="text-[12px] text-slate-300 max-w-[350px]">
                       We engineer robust, data-driven web applications and
                       custom software for complex business needs.
                     </p>
@@ -385,10 +385,8 @@ const Hero = () => {
         </div>
       </section> */}
       <section className="cta-section flex flex-col justify-center items-center mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
-      <Cta />
+        <Cta />
       </section>
-      
-
     </>
   );
 };
