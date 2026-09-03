@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 import TestimonialMarquee from "./components/TestimonialMarquee";
 import kickxwear from "./assets/kickxwear-card-white.png";
@@ -51,7 +52,7 @@ const Hero = () => {
         "Proprietary Analytics Engine",
         "Live in production",
       ],
-      redirectLink: "shiftweb/work/kickxwear",
+      redirectLink: "/work/kickxwear",
     },
     {
       id: "02",
@@ -65,7 +66,7 @@ const Hero = () => {
         "Static Generation",
         "Live in production",
       ],
-      redirectLink: "shiftweb/work/oasistrends",
+      redirectLink: "/work/oasistrends",
     },
   ];
 
@@ -105,9 +106,11 @@ const Hero = () => {
             <button className="bg-[#233DFF] text-white w-[136px] h-[40px] cursor-pointer transition-colors">
               Start a project
             </button>
-            <button className="text-secondary w-[136px] h-[40px] cursor-pointer transition-colors border border-secondary">
-              See our work
-            </button>
+            <Link href="/work">
+              <button className="text-secondary w-[136px] h-[40px] cursor-pointer transition-colors border border-secondary">
+                See our work
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -231,9 +234,9 @@ const Hero = () => {
             Built for scale. Designed for impact. See how our digital ecosystems
             perform in the real world.
           </p>
-          <a href="#" className="text-secondary">
+          <Link href="/work" className="text-secondary">
             View all case studies &rarr;
-          </a>
+          </Link>
         </div>
         <div className="projet-grid grid grid-cols-1 md:grid-cols-2 gap-5">
           {cardInfo.map((info, index) => (

@@ -42,7 +42,7 @@ export default async function ProjectPage({ params }) {
   const nextProject = projects[(currentIndex + 1) % projects.length];
 
   return (
-    <main className=" text-black mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+    <main className=" text-black mx-auto w-full px-6 md:px-11 max-w-6xl pt-6 md:pt-10 pb-16 md:pb-24 overflow-hidden">
       <section>
         <div className="Navbar flex gap-2 text-[12px] text-secondary">
           <Link href={"/"}>
@@ -57,17 +57,16 @@ export default async function ProjectPage({ params }) {
         </div>
 
         {/* Title + description */}
-        <div className="flex flex-col-reverse md:flex-row justify-between align-top my-15 gap-10">
-          <div className="pb-2 left flex flex-col justify-between">
+        <div className="flex flex-col-reverse md:flex-row justify-between align-top my-10 gap-10">
+          <div className="pb-2 left flex flex-col">
             <div>
               <div>
                 <h1
                   className="
-                text-4xl
+                text-3xl
                 font-semibold
                 leading-[0.95]
                 tracking-[-0.04em]
-                sm:text-4xl
                 md:text-5xl
                 lg:text-[76px]
               "
@@ -78,17 +77,17 @@ export default async function ProjectPage({ params }) {
               </div>
 
               <div className="max-w-xl lg:pb-1 mt-5 ">
-                <p className="text-lg max-w-[516px] leading-8 text-secondary">
+                <p className="text-base md:text-lg max-w-[516px] leading-6 md:leading-8 text-secondary">
                   {data.shortDescription}
                 </p>
 
-                <div className="mt-5 flex flex-wrap gap-x-2 text-sm text-secondary">
+                <div className="mt-5 md:mt-7 flex flex-wrap gap-x-1 text-xs md:text-sm text-secondary">
                   {data.services.map((service, index) => (
                     <span key={service}>
                       {service}
 
                       {index < data.services.length - 1 && (
-                        <span className="ml-2 text-slate-300">·</span>
+                        <span className="ml-2 text-secondary">·</span>
                       )}
                     </span>
                   ))}
@@ -97,7 +96,7 @@ export default async function ProjectPage({ params }) {
             </div>
 
             {data.links.live && (
-              <div className="mt-8">
+              <div className="mt-6 md:mt-8">
                 <a
                   href={data.links.live}
                   target="_blank"
@@ -105,9 +104,9 @@ export default async function ProjectPage({ params }) {
                   className="
                 inline-flex
                 items-center
-                gap-3
+                gap-2
                 bg-primary
-                px-6
+                px-5
                 py-3
                 text-sm
                 font-medium
@@ -141,9 +140,9 @@ export default async function ProjectPage({ params }) {
       ====================================================== */}
 
       <section className="border-y border-slate-200">
-        <div className="mx-auto px-6 md:px-10 lg:px-16">
+        <div className="mx-auto px-2 md:px-10 lg:px-12">
           <div className="grid grid-cols-2 lg:grid-cols-4">
-            <div className="border-r border-slate-200 py-8 pr-6 lg:pr-10">
+            <div className="border-r border-b md:border-b-0 border-slate-200 py-4 md:py-8 lg:pr-10">
               <p className="text-xs uppercase tracking-wider text-slate-400">
                 Project
               </p>
@@ -151,7 +150,7 @@ export default async function ProjectPage({ params }) {
               <p className="mt-2 text-base font-medium">{data.projectType}</p>
             </div>
 
-            <div className="lg:border-r border-slate-200 py-8 pl-6 lg:px-10">
+            <div className="lg:border-r border-b md:border-b-0 border-slate-200 py-4 md:py-8 pl-6 lg:px-10">
               <p className="text-xs uppercase tracking-wider text-slate-400">
                 Year
               </p>
@@ -159,7 +158,7 @@ export default async function ProjectPage({ params }) {
               <p className="mt-2 text-base font-medium">{data.year}</p>
             </div>
 
-            <div className="border-r border-slate-200 py-8 pl-0 lg:px-10">
+            <div className="border-r border-slate-200 py-4 md:py-8 pl-0 lg:px-10">
               <p className="text-xs uppercase tracking-wider text-slate-400">
                 Services
               </p>
@@ -169,7 +168,7 @@ export default async function ProjectPage({ params }) {
               </p>
             </div>
 
-            <div className="py-8 pl-6 lg:pl-10">
+            <div className="py-4 md:py-8 pl-6 lg:pl-10">
               <p className="text-xs uppercase tracking-wider text-slate-400">
                 Built with
               </p>
@@ -180,15 +179,15 @@ export default async function ProjectPage({ params }) {
         </div>
       </section>
 
-      <section className="mx-auto px-6 py-24 md:px-10 lg:px-16">
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.7fr_1.3fr]">
+      <section className="mx-auto px-6 py-16 md:px-10 lg:px-16">
+        <div className="flex flex-col gap-4">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.15em] text-primary">
               About the project
             </p>
           </div>
-          <div className="max-w-3xl">
-            <p className="text-2xl leading-10 tracking-tight text-slate-600 md:text-3xl md:leading-[1.5]">
+          <div>
+            <p className="text-lg leading-10 tracking-tight text-slate-600 md:text-3xl md:leading-[1.5]">
               {data.shortDescription}
             </p>
           </div>

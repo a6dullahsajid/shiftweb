@@ -5,42 +5,6 @@ import vanlife from "../assets/vanlife-card-white.png";
 import spendwise from "../assets/spendwise-card-white.png";
 import Cta from "../components/Cta";
 
-// const projects = [
-//   {
-//     number: "01",
-//     title: "Kickxwear",
-//     category: "E-commerce",
-//     services: ["Next.js", "Development", "SEO"],
-//     image: kickxwear,
-//     href: "/work/kickxwear",
-//     featured: true,
-//   },
-//   {
-//     number: "02",
-//     title: "Menu Bar",
-//     category: "Website",
-//     services: ["Web Design", "Development"],
-//     image: menuBar,
-//     href: "/work/menu-bar",
-//   },
-//   {
-//     number: "03",
-//     title: "Oasis Trends",
-//     category: "E-commerce",
-//     services: ["Web Design", "Development"],
-//     image: oasisTrends,
-//     href: "/work/oasis-trends",
-//   },
-//   {
-//     number: "04",
-//     title: "Portexa",
-//     category: "Website",
-//     services: ["Development", "SEO"],
-//     image: portexa,
-//     href: "/work/portexa",
-//   },
-// ];
-
 const cardInfo = [
   {
     id: "01",
@@ -54,7 +18,7 @@ const cardInfo = [
       "Proprietary Analytics Engine",
       "Live in production",
     ],
-    redirectLink: "shiftweb/work/kickxwear",
+    redirectLink: "/work/kickxwear",
   },
   {
     id: "02",
@@ -68,10 +32,10 @@ const cardInfo = [
       "Static Generation",
       "Live in production",
     ],
-    redirectLink: "shiftweb/work/oasistrends",
+    redirectLink: "/work/oasistrends",
   },
   {
-    id: 3, // Make sure this ID is unique in your array
+    id: "03", // Make sure this ID is unique in your array
 
     // Top bar: [Category] • [Project Name] • [Status]
     titleTop: ["Vanlife", "Frontend & UI/UX", "Live"],
@@ -84,10 +48,10 @@ const cardInfo = [
 
     // The tags for the bottom borders
     features: ["React", "UI/UX Design", "Responsive Layout"],
-    redirectLink: "shiftweb/work/vanlife",
+    redirectLink: "/work/vanlife",
   },
   {
-    id: 4, // Make sure this ID is unique in your array
+    id: "04", // Make sure this ID is unique in your array
 
     // Top bar: [Category] • [Project Name] • [Status]
     titleTop: ["Spendwise", "Full Stack", "Live"],
@@ -100,7 +64,7 @@ const cardInfo = [
     // The tags for the bottom borders
     features: ["MERN Stack", "AI Integration", "Data Visualization"],
 
-    redirectLink: "shiftweb/work/spendwise",
+    redirectLink: "/work/spendwise",
   },
 ];
 
@@ -113,7 +77,7 @@ export default function WorkPage() {
       </div>
       <div className="py-8">
         <p className="text-primary text-[36px] sm:text-[50px] max-w-[706px] leading-[1.2] font-[140]">
-          Production software, in domains that don't tolerate shortcuts.
+          Production software, in domains that don&apos;t tolerate shortcuts.
         </p>
         <p className="text-[18px] my-8 text-secondary max-w-[706px]">
           Every case study here is a live or delivered system. No concept demos,
@@ -128,7 +92,7 @@ export default function WorkPage() {
       </div>
       <div className="hr-line mt-15 border-b border-divider border-[#64748B] w-full"></div>
       <div className="py-15">
-        <p className="text-[28px] mb-5">And more — we've shipped 10+ complex projects.</p>
+        <p className="text-[28px] mb-5">And more — we&apos;ve shipped 10+ complex projects.</p>
         <p className="text-[16px] max-w-[680px] text-secondary">The ones above are a handful we can write up publicly. The rest are under NDA or just not captured yet — happy to walk through any of them on a call.</p>
       </div>
       <div className="mt-20">

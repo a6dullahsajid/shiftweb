@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const ProjectCard = ({ info }) => {
   return (
@@ -53,9 +54,9 @@ const ProjectCard = ({ info }) => {
           ))}
         </div>
         <div>
-          <a href="#" className="text-secondary text-[14px] sm:text-[16px]">
+          <Link href={info.redirectLink} className="text-secondary text-[14px] sm:text-[16px]">
             Read the case study &rarr;
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -10,39 +10,60 @@ const projects = [
     slug: "kickxwear",
 
     category: "E-commerce",
-    projectType: "E-commerce Website",
+    projectType: "Full E-commerce Platform",
     year: "2026",
 
     shortDescription:
-      "A modern e-commerce website designed to create a seamless and engaging shopping experience.",
+      "A complete e-commerce platform built for product discovery, direct WhatsApp ordering, SEO growth and data-driven lead generation.",
 
     image: kickxwearImage,
 
     services: [
       "UI/UX Design",
       "E-commerce Development",
-      "SEO",
+      "Admin Panel",
+      "Product Analytics",
+      "Technical SEO",
     ],
 
     problem: [
-      "The business needed a stronger online presence to showcase its products.",
-      "Customers needed a simple and intuitive way to browse products.",
-      "The website needed to provide a responsive experience across desktop and mobile devices.",
+      "The business needed more than a product showcase — it needed a complete e-commerce system that could support product management, customer enquiries and day-to-day operations.",
+
+      "Managing products and keeping catalogue information up to date needed to be possible without changing the website code every time.",
+
+      "The business needed visibility into which products were generating customer enquiries so that leads could be tracked at the product level.",
+
+      "The website also needed strong organic search visibility so that individual products could be discovered through Google.",
+
+      "Customers needed a simple way to enquire about and order products directly through WhatsApp without going through a complicated checkout process.",
     ],
 
     solution: [
-      "Designed a clean, product-focused interface with clear navigation.",
-      "Developed a responsive e-commerce experience optimized for different screen sizes.",
-      "Structured product pages and content with SEO in mind.",
-      "Created a scalable foundation for future products and features.",
+      "Built a complete e-commerce storefront with product browsing, categories and detailed product pages.",
+
+      "Developed a dedicated admin panel for dynamically managing products, pricing, images, sizes and catalogue information, creating a scalable system for adding and updating products without rebuilding the website.",
+
+      "Implemented product-level analytics to record and identify lead generation activity for individual products.",
+
+      "Structured product pages with technical SEO, metadata and structured product information to help search engines understand the catalogue.",
+
+      "Implemented Product and Merchant Listing structured data so eligible products can be understood by Google's shopping-related systems.",
+
+      "Built a product-aware WhatsApp ordering flow that dynamically includes the product name, selected size, price and URL, with Open Graph metadata generating accurate product previews for shared links.",
+
     ],
 
     features: [
+      "Dynamic product catalogue",
+      "Admin product management",
+      "Product-level lead analytics",
+      "Product SEO",
+      "Google product structured data",
+      "Merchant listing support",
+      "WhatsApp ordering",
+      "Product-specific enquiries",
+      "Dynamic Open Graph metadata",
       "Responsive design",
-      "Product browsing",
-      "E-commerce functionality",
-      "Mobile optimization",
-      "SEO-friendly architecture",
     ],
 
     techStack: [
@@ -50,26 +71,47 @@ const projects = [
       "React",
       "Tailwind CSS",
       "JavaScript",
+      "MongoDB",
     ],
 
     results: [
-      "Modern online storefront",
-      "Improved product presentation",
-      "Responsive shopping experience",
-      "SEO-ready website architecture",
+      "Built a complete, scalable e-commerce platform",
+
+      "Enabled the business to manage products through a dedicated admin panel",
+
+      "Created product-level visibility into customer lead generation",
+
+      "Achieved top-5 Google rankings for targeted product-related searches",
+
+      "Implemented structured product data that allows Google to identify product information and support eligible product and merchant listing visibility",
+
+      "Created a faster product enquiry and ordering workflow through WhatsApp",
+
+      "Made product sharing more useful through dynamic Open Graph previews",
+
+      "Established a strong technical foundation for continued SEO growth",
     ],
 
     seo: {
-      title: "Kickxwear E-commerce Website | Shift Web",
+      title:
+        "Kickxwear | E-commerce Website, SEO & Product Platform | Shift Web",
 
       description:
-        "Explore how Shift Web designed and developed a modern e-commerce website for Kickxwear with responsive design, performance and SEO in mind.",
+        "Explore how Shift Web built Kickxwear's e-commerce platform with an admin panel, product analytics, technical SEO, Google product structured data and WhatsApp ordering.",
 
       keywords: [
+        "Kickxwear",
         "Kickxwear website",
         "Kickxwear e-commerce website",
+        "Kickxwear online store",
         "e-commerce website development",
         "Next.js e-commerce development",
+        "e-commerce admin panel",
+        "product analytics",
+        "e-commerce SEO",
+        "Google merchant listings",
+        "product structured data",
+        "WhatsApp e-commerce ordering",
         "Shift Web portfolio",
       ],
     },
@@ -83,41 +125,54 @@ const projects = [
   {
     id: "oasis-trends",
     title: "Oasis Trends",
-    slug: "oasis-trends",
+    slug: "oasistrends",
 
-    category: "E-commerce",
-    projectType: "E-commerce Website",
+    category: "B2B Catalogue",
+
+    projectType: "B2B Product Catalogue",
+
     year: "2026",
 
     shortDescription:
-      "A modern e-commerce experience designed around product discovery, usability and a clean visual identity.",
+      "A professional B2B catalogue website built to showcase leather and leather goods, strengthen the brand's online presence and generate enquiries for bulk and export orders.",
 
     image: oasisTrendsImage,
 
     services: [
       "UI/UX Design",
-      "E-commerce Development",
+      "B2B Website Development",
+      "Product Catalogue",
       "SEO",
     ],
 
     problem: [
-      "The brand needed a professional digital storefront to present its products online.",
-      "Customers needed a straightforward way to browse and discover products.",
-      "The website needed to work consistently across desktop and mobile devices.",
+      "The manufacturer needed a professional online presence that could establish credibility with buyers, importers and businesses.",
+
+      "With a large range of leather and leather goods, potential buyers needed an easy way to explore products and understand what the company offers.",
+
+      "The website needed to support bulk and export enquiries rather than a traditional online checkout experience.",
+
+      "The digital experience needed to communicate the company's capabilities clearly across desktop and mobile devices.",
     ],
 
     solution: [
-      "Created a clean interface focused on products and easy navigation.",
-      "Developed responsive layouts for different screen sizes.",
-      "Organized the shopping experience around intuitive product discovery.",
-      "Built a scalable structure for future improvements.",
+      "Designed a clean, product-focused catalogue experience that puts the manufacturer's products and capabilities at the centre.",
+
+      "Organized products into clear categories to make it easier for potential buyers to discover relevant leather and leather goods.",
+
+      "Created dedicated product presentation sections that provide buyers with the information needed before making an enquiry.",
+
+      "Built clear enquiry and contact pathways focused on generating bulk and export order leads.",
+
+      "Structured the website with SEO-friendly content and architecture to improve discoverability for relevant product and manufacturing searches.",
     ],
 
     features: [
+      "B2B product catalogue",
+      "Product categorization",
+      "Bulk order enquiries",
+      "Lead generation",
       "Responsive design",
-      "Product browsing",
-      "E-commerce functionality",
-      "Mobile-first layouts",
       "SEO-friendly architecture",
     ],
 
@@ -129,66 +184,71 @@ const projects = [
     ],
 
     results: [
-      "Professional online storefront",
-      "Improved product presentation",
-      "Simplified browsing experience",
-      "Responsive experience across devices",
+      "Established a professional online presence for the manufacturer",
+
+      "Created a centralized catalogue for showcasing leather and leather goods",
+
+      "Made product discovery easier for potential B2B buyers",
+
+      "Created dedicated pathways for bulk and export enquiries",
+
+      "Built a scalable foundation for future products and SEO growth",
     ],
 
     seo: {
-      title: "Oasis Trends E-commerce Website | Shift Web",
-
+      title:
+        "Oasis Trends | Leather & Leather Goods Manufacturer | Shift Web",
       description:
-        "Explore how Shift Web designed and developed a modern e-commerce website for Oasis Trends with a focus on usability, responsive design and SEO.",
-
+        "Explore how Shift Web built a professional B2B catalogue website for Oasis Trends to showcase leather and leather goods, strengthen its online presence and generate bulk and export enquiries.",
       keywords: [
-        "Oasis Trends website",
-        "Oasis Trends e-commerce website",
-        "e-commerce website development",
-        "Next.js e-commerce development",
+        "Oasis Trends",
+        "Oasis Trends leather",
+        "leather manufacturer",
+        "leather goods manufacturer",
+        "leather products manufacturer",
+        "leather goods supplier",
+        "leather manufacturer India",
+        "leather products exporter",
+        "leather goods exporter",
+        "bulk leather orders",
+        "leather wholesale supplier",
+        "B2B leather website",
+        "leather product catalogue",
         "Shift Web portfolio",
       ],
     },
 
     links: {
       live: "https://oasistrendsleather.com/",
-      caseStudy: "/work/oasis-trends",
+      caseStudy: "/work/oasistrends",
     },
   },
-
   {
     id: "vanlife",
     title: "Vanlife",
     slug: "vanlife",
-
     category: "Website",
     projectType: "Business Website",
     year: "2026",
-
     shortDescription:
       "A modern business website focused on clarity, performance and presenting the brand professionally online.",
-
     image: vanlifeImage,
-
     services: [
       "UI/UX Design",
       "Web Development",
       "SEO",
     ],
-
     problem: [
       "The business needed a stronger and more professional online presence.",
       "Important information needed to be presented clearly to potential customers.",
       "The website needed to provide a responsive experience across devices.",
     ],
-
     solution: [
       "Designed a clean interface with a clear content hierarchy.",
       "Developed responsive pages optimized for different screen sizes.",
       "Structured the website around clear navigation and calls to action.",
       "Implemented an SEO-friendly technical foundation.",
     ],
-
     features: [
       "Responsive design",
       "Modern UI",
