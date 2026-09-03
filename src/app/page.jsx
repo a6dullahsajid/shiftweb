@@ -4,8 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 import TestimonialMarquee from "./components/TestimonialMarquee";
-import kickxwear from "./assets/kickxwear-card-white.png";
-import oasistrends from "./assets/oasistrends-card-white.png";
+import projects from "./data/work.js";
 import PremiumCard from "./components/PremiumCard";
 import Cta from "./components/Cta";
 
@@ -38,37 +37,6 @@ const Hero = () => {
         return "";
     }
   };
-
-  const cardInfo = [
-    {
-      id: "01",
-      titleTop: ["Kickxwear", "E-Commerce", "Live"],
-      imageUrl: kickxwear,
-      title: "High-Performance Digital Storefront",
-      description:
-        "Features a proprietary, role-isolated admin dashboard for real-time inventory control and a bespoke analytics engine tracking precise user click journeys. We bypassed traditional payment gateways in favor of a streamlined, direct-to-WhatsApp sales funnel, backed by flawless technical SEO with 100% index crawlability",
-      features: [
-        "Next.js Architecture",
-        "Proprietary Analytics Engine",
-        "Live in production",
-      ],
-      redirectLink: "/work/kickxwear",
-    },
-    {
-      id: "02",
-      titleTop: ["Oasis Trends", "Corporate Showcase", "Live"],
-      imageUrl: oasistrends,
-      title: "Single-Page Digital Presence & B2B Catalog",
-      description:
-        "A high-performance static architecture designed to establish a premium digital footprint. Features a streamlined, read-only product catalog showcasing bulk inventory without the overhead of transactional e-commerce infrastructure, ensuring lightning-fast load times and seamless navigation.",
-      features: [
-        "Single-Page Architecture",
-        "Static Generation",
-        "Live in production",
-      ],
-      redirectLink: "/work/oasistrends",
-    },
-  ];
 
   return (
     <>
@@ -239,7 +207,7 @@ const Hero = () => {
           </Link>
         </div>
         <div className="projet-grid grid grid-cols-1 md:grid-cols-2 gap-5">
-          {cardInfo.map((info, index) => (
+          {projects.slice(0, 2).map((info, index) => (
             <PremiumCard key={index} info={info} />
           ))}
         </div>

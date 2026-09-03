@@ -7,12 +7,13 @@ const projects = [
   {
     id: "kickxwear",
     title: "Kickxwear",
+    cardTitle: "High-Performance Digital Storefront",
     slug: "kickxwear",
 
     category: "E-commerce",
-    projectType: "Full E-commerce Platform",
+    projectType: "E-commerce Platform",
     year: "2026",
-
+    description: "Features a proprietary, role-isolated admin dashboard for real-time inventory control and a bespoke analytics engine tracking precise user click journeys. We bypassed traditional payment gateways in favor of a streamlined, direct-to-WhatsApp sales funnel, backed by flawless technical SEO with 100% index crawlability",
     shortDescription:
       "A complete e-commerce platform built for product discovery, direct WhatsApp ordering, SEO growth and data-driven lead generation.",
 
@@ -28,13 +29,9 @@ const projects = [
 
     problem: [
       "The business needed more than a product showcase — it needed a complete e-commerce system that could support product management, customer enquiries and day-to-day operations.",
-
       "Managing products and keeping catalogue information up to date needed to be possible without changing the website code every time.",
-
       "The business needed visibility into which products were generating customer enquiries so that leads could be tracked at the product level.",
-
       "The website also needed strong organic search visibility so that individual products could be discovered through Google.",
-
       "Customers needed a simple way to enquire about and order products directly through WhatsApp without going through a complicated checkout process.",
     ],
 
@@ -53,43 +50,24 @@ const projects = [
 
     ],
 
-    features: [
-      "Dynamic product catalogue",
-      "Admin product management",
-      "Product-level lead analytics",
-      "Product SEO",
-      "Google product structured data",
-      "Merchant listing support",
-      "WhatsApp ordering",
-      "Product-specific enquiries",
-      "Dynamic Open Graph metadata",
-      "Responsive design",
-    ],
-
     techStack: [
       "Next.js",
-      "React",
-      "Tailwind CSS",
-      "JavaScript",
+      "JWT Authentication",
       "MongoDB",
+      "Cloudinary",
+      "SEO Optimization",
+      "JavaScript",
     ],
 
-    results: [
-      "Built a complete, scalable e-commerce platform",
-
-      "Enabled the business to manage products through a dedicated admin panel",
-
-      "Created product-level visibility into customer lead generation",
-
-      "Achieved top-5 Google rankings for targeted product-related searches",
-
-      "Implemented structured product data that allows Google to identify product information and support eligible product and merchant listing visibility",
-
-      "Created a faster product enquiry and ordering workflow through WhatsApp",
-
-      "Made product sharing more useful through dynamic Open Graph previews",
-
-      "Established a strong technical foundation for continued SEO growth",
+    highlights: [
+      "Complete e-commerce platform with dynamic product catalogue",
+      "Dedicated admin panel for managing products, pricing, images and sizes",
+      "Product-level lead analytics to track customer enquiries",
+      "Technical SEO with Product and Merchant Listing structured data",
+      "Top-5 Google rankings for targeted product-related searches",
+      "Product-aware WhatsApp ordering with dynamic product details",
+      "Dynamic Open Graph previews for shared product links",
+      "Scalable architecture built for continued SEO and product growth",
     ],
 
     seo: {
@@ -125,6 +103,7 @@ const projects = [
   {
     id: "oasis-trends",
     title: "Oasis Trends",
+    cardTitle: "Single-Page Digital Presence & B2B Catalogue",
     slug: "oasistrends",
 
     category: "B2B Catalogue",
@@ -132,6 +111,8 @@ const projects = [
     projectType: "B2B Product Catalogue",
 
     year: "2026",
+
+    description: "A high-performance static architecture designed to establish a premium digital footprint. Features a streamlined, read-only product catalog showcasing bulk inventory without the overhead of transactional e-commerce infrastructure, ensuring lightning-fast load times and seamless navigation.",
 
     shortDescription:
       "A professional B2B catalogue website built to showcase leather and leather goods, strengthen the brand's online presence and generate enquiries for bulk and export orders.",
@@ -167,32 +148,21 @@ const projects = [
       "Structured the website with SEO-friendly content and architecture to improve discoverability for relevant product and manufacturing searches.",
     ],
 
-    features: [
-      "B2B product catalogue",
-      "Product categorization",
-      "Bulk order enquiries",
-      "Lead generation",
-      "Responsive design",
-      "SEO-friendly architecture",
-    ],
-
     techStack: [
-      "Next.js",
+      "Gatsby.js",
       "React",
       "Tailwind CSS",
       "JavaScript",
     ],
 
-    results: [
-      "Established a professional online presence for the manufacturer",
-
-      "Created a centralized catalogue for showcasing leather and leather goods",
-
-      "Made product discovery easier for potential B2B buyers",
-
-      "Created dedicated pathways for bulk and export enquiries",
-
-      "Built a scalable foundation for future products and SEO growth",
+    highlights: [
+      "Professional B2B product catalogue for leather and leather goods",
+      "Organized product categories for easier buyer discovery",
+      "Product-focused presentation designed for B2B buyers",
+      "Bulk and export enquiry pathways for lead generation",
+      "Responsive experience across desktop, tablet and mobile",
+      "SEO-friendly architecture for product and manufacturing searches",
+      "Scalable foundation for future products and SEO growth",
     ],
 
     seo: {
@@ -226,12 +196,14 @@ const projects = [
   {
     id: "vanlife",
     title: "Vanlife",
+    cardTitle: "Van Rental Platform Interface & Experience",
     slug: "vanlife",
     category: "Website",
     projectType: "Business Website",
     year: "2026",
+    description: "A fully responsive frontend architecture and custom UI/UX design for a specialized vehicle renting platform. Delivers an engaging browsing experience featuring detailed van specifications, pricing models, and user reviews, focusing entirely on client-side performance and seamless layout.",
     shortDescription:
-      "A modern business website focused on clarity, performance and presenting the brand professionally online.",
+      "A modern business website focused on clarity, performance and presenting the brand professionally online",
     image: vanlifeImage,
     services: [
       "UI/UX Design",
@@ -249,27 +221,21 @@ const projects = [
       "Structured the website around clear navigation and calls to action.",
       "Implemented an SEO-friendly technical foundation.",
     ],
-    features: [
-      "Responsive design",
-      "Modern UI",
-      "Clear navigation",
-      "Call-to-action focused sections",
-      "SEO-friendly structure",
-      "Performance-focused development",
-    ],
 
+    highlights: [
+      "Modern responsive business website",
+      "Clear content hierarchy and navigation",
+      "Call-to-action focused sections",
+      "Mobile-first responsive experience",
+      "Performance-focused development",
+      "SEO-friendly technical structure",
+      "Professional online presence",
+    ],
     techStack: [
-      "Next.js",
-      "React",
+      "React.js",
+      "UI/UX Design",
       "Tailwind CSS",
       "JavaScript",
-    ],
-
-    results: [
-      "Stronger online presence",
-      "Clearer presentation of the business",
-      "Responsive user experience",
-      "SEO-ready website foundation",
     ],
 
     seo: {
@@ -295,11 +261,14 @@ const projects = [
   {
     id: "spendwise",
     title: "Spendwise",
+    cardTitle: "Smart Expense Tracker & AI Financial Assistant",
     slug: "spendwise",
 
     category: "Website",
     projectType: "Business Website",
     year: "2026",
+
+    description: "A comprehensive full-stack financial management platform built on the MERN stack. Features an integrated AI chatbot for intelligent insights, dynamic expense-to-income graphs for visual data analysis, and a secure backend for reliable transaction tracking.",
 
     shortDescription:
       "A modern business website focused on clarity, performance and presenting the brand professionally online.",
@@ -325,27 +294,21 @@ const projects = [
       "Implemented an SEO-friendly technical foundation.",
     ],
 
-    features: [
-      "Responsive design",
-      "Modern UI",
-      "Clear navigation",
-      "Call-to-action focused sections",
-      "SEO-friendly structure",
-      "Performance-focused development",
+    highlights: [
+      "Modern, professional business website",
+      "Clean UI with clear content hierarchy",
+      "Responsive experience across desktop, tablet and mobile",
+      "Clear navigation for easier information discovery",
+      "Strategic call-to-action sections focused on conversions",
+      "Performance-focused development for a smoother experience",
+      "SEO-friendly technical foundation for future search growth",
     ],
-
     techStack: [
-      "Next.js",
       "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
       "Tailwind CSS",
-      "JavaScript",
-    ],
-
-    results: [
-      "Stronger online presence",
-      "Clearer presentation of the business",
-      "Responsive user experience",
-      "SEO-ready website foundation",
     ],
 
     seo: {
