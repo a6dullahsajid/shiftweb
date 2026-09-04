@@ -26,7 +26,7 @@ const PricingSection = () => {
             <h3 className="text-[20px] font-semibold text-primary mb-2">Basic Plan</h3>
             <p className="text-[14px] text-secondary mb-6 min-h-[40px]">Perfect for single page website.</p>
             <div className="flex items-baseline gap-1 mb-8">
-              <span className="text-[40px] font-[140] text-primary">8k</span>
+              <span className="text-[40px] font-[140] text-primary">₹8,000</span>
               <span className="text-[14px] text-secondary">/project</span>
             </div>
             <ul className="flex flex-col gap-4 mb-8 flex-1">
@@ -38,19 +38,19 @@ const PricingSection = () => {
               ))}
             </ul>
             <button className="w-full py-3 border border-secondary text-secondary font-medium hover:bg-secondary/5 transition-colors text-[14px]">
-              Start Project
+              Book a Call
             </button>
           </div>
 
           {/* Tier 2: Normal Plan (Highlighted) */}
           <div className="relative flex flex-col p-8 bg-primary border border-primary md:-translate-y-4">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white text-primary text-[10px] font-bold uppercase tracking-widest py-1.5 px-4 rounded-sm shadow-sm">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white border border-secondary/20 text-primary text-[10px] font-bold uppercase tracking-widest py-1.5 px-4">
               Most Popular
             </div>
             <h3 className="text-[20px] font-semibold text-white mb-2">Normal Plan</h3>
-            <p className="text-[14px] text-white/80 mb-6 min-h-[40px]">multi page along with SEO.</p>
+            <p className="text-[14px] text-white/80 mb-6 min-h-[40px]">Multi page along with SEO.</p>
             <div className="flex items-baseline gap-1 mb-8">
-              <span className="text-[40px] font-[140] text-white">15k</span>
+              <span className="text-[40px] font-[140] text-white">₹15,000</span>
               <span className="text-[14px] text-white/80">/project</span>
             </div>
             <ul className="flex flex-col gap-4 mb-8 flex-1">
@@ -62,16 +62,16 @@ const PricingSection = () => {
               ))}
             </ul>
             <button className="w-full py-3 bg-white text-primary font-medium hover:bg-gray-50 transition-colors text-[14px]">
-              Start Project
+              Book a Call
             </button>
           </div>
 
           {/* Tier 3: Pro Plan */}
           <div className="flex flex-col p-8 bg-[#F8FAFC] border border-secondary/20">
             <h3 className="text-[20px] font-semibold text-primary mb-2">Pro Plan</h3>
-            <p className="text-[14px] text-secondary mb-6 min-h-[40px]">multi page ,admin panel along with SEO and analytics panel ''clicks on products page".</p>
+            <p className="text-[14px] text-secondary mb-6 min-h-[40px]">Multi page, admin panel along with SEO and analytics panel.</p>
             <div className="flex items-baseline gap-1 mb-8">
-              <span className="text-[40px] font-[140] text-primary">22k</span>
+              <span className="text-[40px] font-[140] text-primary">₹22,000</span>
               <span className="text-[14px] text-secondary">/project</span>
             </div>
             <ul className="flex flex-col gap-4 mb-8 flex-1">

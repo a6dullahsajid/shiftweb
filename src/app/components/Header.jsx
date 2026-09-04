@@ -34,7 +34,7 @@ const Header = () => {
                   <Link href="/services" className="hover:text-gray-500 transition-colors">How we work</Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-gray-500 transition-colors">Team</Link>
+                  <Link href="/services" className="hover:text-gray-500 transition-colors">Investment</Link>
                 </li>
                 <li>
                   <Link href="/aboutus" className="hover:text-gray-500 transition-colors">About</Link>
@@ -92,7 +92,7 @@ const Header = () => {
               <Link href="/services" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">How we work</Link>
             </li>
             <li>
-              <Link href="/services" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">Team</Link>
+              <Link href="/services" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">Investment</Link>
             </li>
             <li>
               <Link href="/services" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">About</Link>
