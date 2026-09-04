@@ -40,7 +40,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className="hero-section flex items-start flex-col lg:flex-row justify-between bg-white mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+      <section className="hero-section flex items-start flex-col lg:flex-row justify-between bg-white mx-auto w-full px-6 md:px-10 max-w-6xl pt-14 pb-20 overflow-hidden gap-12 lg:gap-8">
         {/* Left Div (Unchanged) */}
         <div className="left flex-1">
           <div>
@@ -109,7 +109,7 @@ const Hero = () => {
       </section>
 
       <section className="services-section bg-[#F8FAFC]">
-        <div className="flex items-start flex-col lg:flex-row justify-between mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+        <div className="flex items-start flex-col lg:flex-row justify-between mx-auto w-full px-6 md:px-10 max-w-6xl pt-14 pb-20 overflow-hidden gap-12 lg:gap-8">
           <div className="left flex-1">
             <div>
               <p className="uppercase text-secondary text-[12px]">
@@ -191,7 +191,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <section className="work-section mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+      <section className="work-section mx-auto w-full px-6 md:px-10 max-w-6xl pt-14 pb-20 overflow-hidden gap-12 lg:gap-8">
         <div>
           <p className="uppercase text-secondary text-[12px]">
             our recent work
@@ -206,7 +206,7 @@ const Hero = () => {
             View all case studies &rarr;
           </Link>
         </div>
-        <div className="projet-grid grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="projet-grid grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
           {projects.slice(0, 2).map((info, index) => (
             <PremiumCard key={index} info={info} />
           ))}
@@ -214,7 +214,7 @@ const Hero = () => {
       </section>
 
       <section className="plan-section bg-[#F8FAFC]">
-        <div className="mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+        <div className="mx-auto w-full px-6 md:px-10 max-w-6xl pt-14 pb-20 overflow-hidden gap-12 lg:gap-8">
           <div>
             <p className="uppercase text-secondary text-[12px]">how we start</p>
           </div>
@@ -312,7 +312,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <section className="testimonial-section flex flex-col justify-center items-center mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+      <section className="testimonial-section flex flex-col justify-center items-center mx-auto w-full px-6 md:px-10 max-w-6xl pt-14 pb-20 overflow-hidden gap-12 lg:gap-8">
         <div>
           <p className="uppercase text-secondary text-[12px]">
             Why founders trust us
@@ -355,7 +355,7 @@ const Hero = () => {
           </div>
         </div>
       </section> */}
-      <section className="cta-section flex flex-col justify-center items-center mx-auto w-full px-6 md:px-11 max-w-6xl pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+      <section className="cta-section flex flex-col justify-center items-center mx-auto w-full px-6 md:px-11 max-w-6xl pt-14 pb-20 overflow-hidden gap-12 lg:gap-8">
         <Cta />
       </section>
     </>

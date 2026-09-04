@@ -7,10 +7,10 @@ export default function WorkPage() {
     <>
     <section className="work-section mx-auto w-full px-6 md:px-10 max-w-6xl pt-6 md:pt-12 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
       <div>
-        <p className="uppercase text-secondary font-bold">work</p>
+        <p className="uppercase text-secondary text-[12px]">work</p>
       </div>
       <div className="py-3 md:py-6">
-        <p className="text-primary text-2xl md:text-5xl max-w-[850px] md:leading-[1.2] font-[250]">
+        <p className="text-primary text-2xl md:text-5xl max-w-[850px] md:leading-[1.2] font-[140]">
           Production software, in domains that don&apos;t tolerate shortcuts.
         </p>
         <p className="text-xs md:text-lg my-2 md:my-6 text-secondary max-w-[706px]">

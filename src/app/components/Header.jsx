@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <>
     <header className='sticky top-0 z-40 backdrop-blur-lg bg-white/80 border-b border-divider border-[#64748B]'>
-        <div className='mx-auto w-full px-6 md:px-11 max-w-6xl flex items-center justify-between h-[72px] py-4'>
+        <div className='mx-auto w-full px-6 md:px-10 max-w-6xl flex items-center justify-between h-[72px] py-4'>
         <a className="flex items-center gap-2.5 font-display text-2xl tracking-tight leading-none">
             <Image src={shiftweb_logo} alt='header-logo' loading='eager' width={84}/>
         </a>
