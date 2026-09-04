@@ -39,12 +39,12 @@ const TestimonialMarquee = () => {
               {testimonials.map((card, index) => (
                 <div 
                   key={index} 
-                  className="bg-[#F8FAFC] w-[350px] shrink-0 flex flex-col gap-4 justify-center items-center p-8 rounded-sm"
+                  className="bg-[#F8FAFC] border border-secondary/20 w-[350px] shrink-0 flex flex-col gap-4 justify-center items-center p-8 rounded-sm"
                 >
                   <p className="text-center text-secondary">
                     “{card.quote}”
                   </p>
-                  <div className="hl h-[1px] bg-secondary/50 w-[90%]"></div>
+                  <div className="hl h-[1px] border border-secondary/20 w-[90%]"></div>
                   <p className="text-secondary">{card.author}</p>
                 </div>
               ))}

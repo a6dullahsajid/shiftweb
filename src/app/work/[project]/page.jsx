@@ -42,7 +42,7 @@ export default async function ProjectPage({ params }) {
   const nextProject = projects[(currentIndex + 1) % projects.length];
 
   return (
-    <main className=" text-black mx-auto w-full px-6 md:px-11 max-w-6xl pt-6 md:pt-10 pb-16 md:pb-24 overflow-hidden">
+    <main className=" text-black mx-auto w-full px-6 md:px-10 max-w-6xl pt-14 pb-20 overflow-hidden">
       <section>
         <div className="Navbar flex gap-2 text-[12px] text-secondary">
           <Link href={"/"}>

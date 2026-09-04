@@ -7,6 +7,7 @@ import TestimonialMarquee from "./components/TestimonialMarquee";
 import projects from "./data/work.js";
 import PremiumCard from "./components/PremiumCard";
 import Cta from "./components/Cta";
+import PricingSection from "./components/PricingSection";
 
 const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -117,7 +118,7 @@ const Hero = () => {
               </p>
             </div>
             <div className="py-8">
-              <p className="text-primary text-[36px] sm:text-[50px] max-w-[706px] leading-[1.2] font-[140]">
+              <p className="text-primary text-[36px] sm:text-[50px] max-w-[850px] leading-[1.2] font-[140]">
                 From your visual identity to your launch strategy. We provide
                 the complete digital toolkit to get your business off the
                 ground.
@@ -126,7 +127,7 @@ const Hero = () => {
             <div className="service-grid flex flex-col gap-5 mt-5">
               {/* Top Row */}
               <div className="service-grid-top flex flex-wrap items-center gap-5">
-                <div className="w-full max-w-full md:max-w-[300px] h-[300px] bg-[#C1E1FF] p-4 flex flex-col justify-between">
+                <div className="w-full max-w-full md:max-w-[300px] h-[300px] bg-[#C1E1FF] border border-secondary/20 p-4 flex flex-col justify-between">
                   <p className="text-[12px] text-secondary">01</p>
                   <div className="flex flex-col gap-5 pb-5">
                     <p className="text-[18px]">High-Performance Websites</p>
@@ -137,7 +138,7 @@ const Hero = () => {
                   </div>
                 </div>
 
-                <div className="w-full max-w-full md:max-w-[300px] h-[300px] bg-[#FDF2F8] p-4 flex flex-col justify-between">
+                <div className="w-full max-w-full md:max-w-[300px] h-[300px] bg-[#FDF2F8] border border-secondary/20 p-4 flex flex-col justify-between">
                   <p className="text-[12px] text-secondary">02</p>
                   <div className="flex flex-col gap-5 pb-5">
                     <p className="text-[18px]">Brand Identity</p>
@@ -148,7 +149,7 @@ const Hero = () => {
                   </div>
                 </div>
 
-                <div className="w-full max-w-full md:max-w-[620px] lg:max-w-[300px] h-[300px] bg-[#F0FDF4] p-4 flex flex-col justify-between">
+                <div className="w-full max-w-full md:max-w-[620px] lg:max-w-[300px] h-[300px] bg-[#F0FDF4] border border-secondary/20 p-4 flex flex-col justify-between">
                   <p className="text-[12px] text-secondary">03</p>
                   <div className="flex flex-col gap-5 pb-5">
                     <p className="text-[18px]">SEO Revitalization</p>
@@ -162,7 +163,7 @@ const Hero = () => {
 
               {/* Bottom Row */}
               <div className="service-grid-bottom flex flex-wrap items-center gap-5">
-                <div className="w-full max-w-full md:max-w-[620px] lg:max-w-[460px] h-[300px] bg-[#FDEFDD] p-4 flex flex-col justify-between">
+                <div className="w-full max-w-full md:max-w-[620px] lg:max-w-[460px] h-[300px] bg-[#FDEFDD] border border-secondary/20 p-4 flex flex-col justify-between">
                   <p className="text-[12px] text-secondary">04</p>
                   <div className="flex flex-col gap-5 pb-5">
                     <p className="text-[18px]">Social Media Kick-Start</p>
@@ -173,7 +174,7 @@ const Hero = () => {
                   </div>
                 </div>
 
-                <div className="w-full max-w-full md:max-w-[620px] lg:max-w-[460px] h-[300px] bg-primary p-4 flex flex-col justify-between">
+                <div className="w-full max-w-full md:max-w-[620px] lg:max-w-[460px] h-[300px] bg-primary border border-secondary/20 p-4 flex flex-col justify-between">
                   <p className="text-[12px] text-slate-300">05</p>
                   <div className="flex flex-col gap-5 pb-5">
                     <p className="text-[18px] text-white">
@@ -198,7 +199,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="py-8 flex flex-col lg:flex-row gap-5 justify-between lg:items-baseline-last">
-          <p className="text-primary text-[36px] sm:text-[50px] max-w-[706px] leading-[1.2] font-[140]">
+          <p className="text-primary text-[36px] sm:text-[50px] max-w-[850px] leading-[1.2] font-[140]">
             Built for scale. Designed for impact. See how our digital ecosystems
             perform in the real world.
           </p>
@@ -355,9 +356,13 @@ const Hero = () => {
           </div>
         </div>
       </section> */}
+      <section className="pricing-section flex flex-col justify-center items-center mx-auto w-full px-6 md:px-11 max-w-6xl pt-14 pb-20 overflow-hidden gap-12 lg:gap-8">
+        <PricingSection />
+      </section>
       <section className="cta-section flex flex-col justify-center items-center mx-auto w-full px-6 md:px-11 max-w-6xl pt-14 pb-20 overflow-hidden gap-12 lg:gap-8">
         <Cta />
       </section>
+      
     </>
   );
 };

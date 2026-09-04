@@ -5,7 +5,7 @@ import projects from "../data/work.js";
 export default function WorkPage() {
   return (
     <>
-    <section className="work-section mx-auto w-full px-6 md:px-10 max-w-6xl pt-6 md:pt-12 pb-24 md:pb-32 overflow-hidden gap-12 lg:gap-8">
+    <section className="work-section mx-auto w-full px-6 md:px-10 max-w-6xl pt-14 pb-20 overflow-hidden gap-12 lg:gap-8">
       <div>
         <p className="uppercase text-secondary text-[12px]">work</p>
       </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const ProjectCard = ({ info }) => {
   return (
-    <div className="project-card-1 py-6 flex flex-col justify-between gap-2 w-full bg-[#F8FAFC]">
+    <div className="project-card-1 py-6 flex flex-col justify-between gap-2 w-full bg-[#F8FAFC] border border-secondary/20">
       <div>
         <div className="top relative">
           <div className="flex pl-5 sm:pl-10 items-center gap-2.5 text-[12px] text-secondary">
