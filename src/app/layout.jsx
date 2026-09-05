@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+  ),
   title: "Shift Web | Design, Development & SEO",
   description:
     "Shift Web designs and develops high-performance websites that look great, rank higher, and help businesses grow online.",

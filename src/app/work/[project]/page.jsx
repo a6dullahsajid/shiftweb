@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 
 import projects from "../../data/work";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
 export async function generateStaticParams() {
   return projects.map((project) => ({
     project: project.slug,
@@ -18,13 +20,55 @@ export async function generateMetadata({ params }) {
   if (!data) {
     return {
       title: "Project Not Found | Shift Web",
+      robots: {
+        index: false,
+        follow: false,
+      },
     };
   }
+
+  const projectUrl = `${siteUrl}/work/${data.slug}`;
+  const imageUrl = `${siteUrl}/work/${data.slug}/opengraph-image`;
 
   return {
     title: data.seo.title,
     description: data.seo.description,
     keywords: data.seo.keywords,
+    alternates: {
+      canonical: projectUrl,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
+    },
+    openGraph: {
+      type: "article",
+      url: projectUrl,
+      title: data.seo.title,
+      description: data.seo.description,
+      siteName: "Shift Web",
+      images: [
+        {
+          url: imageUrl,
+          width: data.image.width,
+          height: data.image.height,
+          alt: `${data.title} project preview`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: data.seo.title,
+      description: data.seo.description,
+      images: [imageUrl],
+    },
   };
 }
 
@@ -40,9 +84,36 @@ export default async function ProjectPage({ params }) {
   const currentIndex = projects.findIndex((item) => item.slug === project);
 
   const nextProject = projects[(currentIndex + 1) % projects.length];
+  const projectUrl = `${siteUrl}/work/${data.slug}`;
+  const imageUrl = `${siteUrl}/work/${data.slug}/opengraph-image`;
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: data.title,
+    headline: data.seo.title,
+    description: data.seo.description,
+    url: projectUrl,
+    image: imageUrl,
+    creator: {
+      "@type": "Organization",
+      name: "Shift Web",
+      url: siteUrl,
+    },
+    provider: {
+      "@type": "Organization",
+      name: "Shift Web",
+      url: siteUrl,
+    },
+    keywords: data.seo.keywords.join(", "),
+    about: data.services,
+  };
 
   return (
     <main className=" text-black mx-auto w-full px-6 md:px-10 max-w-6xl pt-14 pb-20 overflow-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <section>
         <div className="Navbar flex gap-2 text-[12px] text-secondary">
           <Link href={"/"}>
