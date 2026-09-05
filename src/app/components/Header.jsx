@@ -19,25 +19,25 @@ const Header = () => {
     <>
     <header className='sticky top-0 z-40 backdrop-blur-lg bg-white/80 border-b border-divider border-[#64748B]'>
         <div className='mx-auto w-full px-6 md:px-10 max-w-6xl flex items-center justify-between h-[72px] py-4'>
-        <a className="flex items-center gap-2.5 font-display text-2xl tracking-tight leading-none">
+        <Link href="/" className="flex items-center gap-2.5 font-display text-2xl tracking-tight leading-none">
             <Image src={shiftweb_logo} alt='header-logo' loading='eager' width={84}/>
-        </a>
+        </Link>
         <nav className="navbar-desk hidden md:flex">
             <ul className='flex items-center gap-8 text-[#64748B] text-[12px] lg:text-[14px]'>
                 <li>
-                  <Link href="/" className="hover:text-gray-500 transition-colors">Our services</Link>
+                  <Link href="/#services" className="hover:text-gray-500 transition-colors">Our services</Link>
                 </li>
                 <li>
                   <Link href="/work" className="hover:text-gray-500 transition-colors">Our work</Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-gray-500 transition-colors">How we work</Link>
+                  <Link href="/#plan" className="hover:text-gray-500 transition-colors">How we work</Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-gray-500 transition-colors">Investment</Link>
+                  <Link href="/#pricing" className="hover:text-gray-500 transition-colors">Pricing</Link>
                 </li>
                 <li>
-                  <Link href="/aboutus" className="hover:text-gray-500 transition-colors">About</Link>
+                  <Link href="/about" className="hover:text-gray-500 transition-colors">About</Link>
                 </li>
                 <button className='bg-[#233DFF] text-white w-[136px] h-[40px] cursor-pointer transition-colors'>
                     Start a project
