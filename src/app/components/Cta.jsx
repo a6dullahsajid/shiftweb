@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Cta = () => {
   return (
@@ -22,9 +23,11 @@ const Cta = () => {
           Start a project
         </button>
 
+        <Link href = "/work">
         <button className="text-white hover:bg-white hover:text-primary w-[200px] sm:w-[136px] h-[40px] cursor-pointer transition-colors border border-white">
           See our work
         </button>
+        </Link>
       </div>
     </div>
   );

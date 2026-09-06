@@ -30,10 +30,11 @@ function Footer() {
               Company
             </p>
             <ul className="flex flex-col gap-3 text-[14px] text-slate-300">
-              <li><a href="#" className="hover:text-white transition-colors">Our services</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Our work</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">How we work</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Team</a></li>
+              <li><Link href="/#services" className="hover:text-white transition-colors">Our services</Link></li>
+              <li><Link href="/work" className="hover:text-white transition-colors">Our work</Link></li>
+              <li><Link href="/#plan" className="hover:text-white transition-colors">How we work</Link></li>
+              <li><Link href="/#pricing" className="hover:text-white transition-colors">Pricing</Link></li>
+              <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
             </ul>
           </div>
 
