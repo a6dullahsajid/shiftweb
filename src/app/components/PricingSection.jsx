@@ -168,8 +168,8 @@ const PricingSection = () => {
             <button
               className={
                 plan.popular
-                  ? "w-full py-3 bg-white text-primary font-medium hover:bg-gray-50 transition-colors text-[14px]"
-                  : "w-full py-3 border border-secondary text-secondary font-medium hover:bg-secondary/5 transition-colors text-[14px]"
+                  ? "w-full py-3 bg-white text-primary font-medium hover:bg-gray-200 transition-colors text-[14px] cursor-pointer"
+                  : "w-full py-3 border border-secondary text-secondary font-medium hover:bg-secondary hover:text-white transition-colors text-[14px] cursor-pointer"
               }
             >
               Book a Call

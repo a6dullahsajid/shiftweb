@@ -40,11 +40,11 @@ const Hero = () => {
             </p>
           </div>
           <div className="pt-4 flex items-center gap-5">
-            <button className="bg-[#233DFF] text-white w-[136px] h-[40px] cursor-pointer transition-colors">
+            <button className="bg-primary hover:bg-primary/90 text-white w-[136px] h-[40px] cursor-pointer transition-colors">
               Start a project
             </button>
             <Link href="/work">
-              <button className="text-secondary w-[136px] h-[40px] cursor-pointer transition-colors border border-secondary">
+              <button className="text-secondary hover:bg-secondary hover:text-white w-[136px] h-[40px] cursor-pointer transition-colors border border-secondary">
                 See our work
               </button>
             </Link>
@@ -151,7 +151,7 @@ const Hero = () => {
             Built for scale. Designed for impact. See how our digital ecosystems
             perform in the real world.
           </p>
-          <Link href="/work" className="text-secondary">
+          <Link href="/work" className="text-secondary hover:text-primary transition-colors">
             View all case studies &rarr;
           </Link>
         </div>
@@ -180,7 +180,7 @@ const Hero = () => {
                   before committing to the next phase.
                 </p>
               </div>
-              <button className="bg-primary text-white w-[136px] h-[40px] cursor-pointer transition-colors">
+              <button className="bg-primary hover:bg-primary/90 text-white w-[136px] h-[40px] cursor-pointer transition-colors">
                 Start a project
               </button>
             </div>

@@ -23,23 +23,23 @@ const Header = () => {
             <Image src={shiftweb_logo} alt='header-logo' loading='eager' width={84}/>
         </Link>
         <nav className="navbar-desk hidden md:flex">
-            <ul className='flex items-center gap-8 text-[#64748B] text-[12px] lg:text-[14px]'>
+            <ul className='flex items-center gap-8 text-secondary text-[12px] lg:text-[14px]'>
                 <li>
-                  <Link href="/#services" className="hover:text-gray-500 transition-colors">Our services</Link>
+                  <Link href="/#services" className="hover:text-gray-900 transition-colors">Our services</Link>
                 </li>
                 <li>
-                  <Link href="/work" className="hover:text-gray-500 transition-colors">Our work</Link>
+                  <Link href="/work" className="hover:text-gray-900 transition-colors">Our work</Link>
                 </li>
                 <li>
-                  <Link href="/#plan" className="hover:text-gray-500 transition-colors">How we work</Link>
+                  <Link href="/#plan" className="hover:text-gray-900 transition-colors">How we work</Link>
                 </li>
                 <li>
-                  <Link href="/#pricing" className="hover:text-gray-500 transition-colors">Pricing</Link>
+                  <Link href="/#pricing" className="hover:text-gray-900 transition-colors">Pricing</Link>
                 </li>
                 <li>
-                  <Link href="/about" className="hover:text-gray-500 transition-colors">About</Link>
+                  <Link href="/about" className="hover:text-gray-900 transition-colors">About</Link>
                 </li>
-                <button className='bg-[#233DFF] text-white w-[136px] h-[40px] cursor-pointer transition-colors'>
+                <button className='bg-primary hover:bg-primary/90 text-white w-[136px] h-[40px] cursor-pointer transition-colors'>
                     Start a project
                 </button>
             </ul>
@@ -81,7 +81,7 @@ const Header = () => {
 
         {/* Sidebar Links */}
         <nav className="flex flex-col gap-6 px-8 py-4">
-          <ul className='flex flex-col gap-6 text-[#64748B] text-[16px] font-medium'>
+          <ul className='flex flex-col gap-6 text-secondary text-[16px] font-medium'>
             <li>
               <Link href="/" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">Our services</Link>
             </li>
