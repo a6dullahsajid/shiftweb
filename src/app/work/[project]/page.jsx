@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Cta from "../../components/Cta";
 
 import projects from "../../data/work";
 
@@ -394,6 +395,8 @@ export default async function ProjectPage({ params }) {
           </div>
         </Link>
       </section>
+
+
     </main>
   );
 }
