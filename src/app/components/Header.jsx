@@ -6,6 +6,7 @@ import Image from 'next/image'
 import shiftweb_logo from "../assets/shiftweb-logo.png"
 import menu_bar from "../assets/menu-bar.png"
 import Link from 'next/link'
+import StartProjectButton from './StartProjectButton'
 
 const Header = () => {
 
@@ -39,9 +40,7 @@ const Header = () => {
                 <li>
                   <Link href="/about" className="hover:text-gray-900 transition-colors">About</Link>
                 </li>
-                <button className='bg-primary hover:bg-primary/90 text-white w-[136px] h-[40px] cursor-pointer transition-colors'>
-                    Start a project
-                </button>
+                <StartProjectButton isHeader className='bg-primary hover:bg-primary/90 text-white w-[136px] h-[40px] cursor-pointer transition-colors' />
             </ul>
         </nav>
         <nav 
@@ -97,9 +96,7 @@ const Header = () => {
             <li>
               <Link href="/services" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">About</Link>
             </li>
-            <button className='bg-[#233DFF] text-white w-full h-[48px] mt-4 cursor-pointer transition-colors shadow-md'>
-              Start a project
-            </button>
+            <StartProjectButton isHeader className='bg-[#233DFF] text-white w-full h-[48px] mt-4 cursor-pointer transition-colors shadow-md' />
           </ul>
         </nav>
       </div>

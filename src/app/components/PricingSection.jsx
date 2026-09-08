@@ -1,13 +1,14 @@
 import React from "react";
+import StartProjectButton from "./StartProjectButton";
 
 const pricingPlans = [
   {
-    name: "Basic Plan",
-    description: "Perfect for a single-page business website.",
+    name: "Launch",
+    description: "A polished 3–4 page static website to establish your presence online.",
     price: "₹8,000",
     popular: false,
     features: [
-      "Professional one-page business website",
+      "3–4 page static business website",
       "Mobile-friendly design",
       "WhatsApp enquiry integration",
       "Basic Google SEO setup",
@@ -19,7 +20,7 @@ const pricingPlans = [
   },
 
   {
-    name: "Normal Plan",
+    name: "Growth",
     description: "Multi-page website with SEO and enquiry features.",
     price: "₹15,000",
     popular: true,
@@ -36,7 +37,7 @@ const pricingPlans = [
   },
 
   {
-    name: "Pro Plan",
+    name: "Scale",
     description:
       "Dynamic website with admin panel, SEO and advanced analytics.",
     price: "₹22,000",
@@ -62,11 +63,11 @@ const PricingSection = () => {
           Investment
         </p>
 
-        <h2 className="text-primary text-[36px] md:text-[50px] max-w-[850px] font-[140] leading-[1.2] mb-6">
+        <h2 className="text-primary text-2xl md:text-5xl max-w-[870px] font-[140] leading-[1.2] mb-4">
           Transparent pricing for high-performance builds.
         </h2>
 
-        <p className="text-[16px] sm:text-[20px] text-secondary leading-relaxed">
+        <p className="text-sm md:text-lg my-2 md:my-6 text-secondary leading-relaxed">
           No hidden fees or surprise retainers. Choose the architecture that
           fits your exact growth stage.
         </p>
@@ -165,15 +166,15 @@ const PricingSection = () => {
               ))}
             </ul>
 
-            <button
+            <StartProjectButton
+              openCallForm
               className={
                 plan.popular
                   ? "w-full py-3 bg-white text-primary font-medium hover:bg-gray-200 transition-colors text-[14px] cursor-pointer"
                   : "w-full py-3 border border-secondary text-secondary font-medium hover:bg-secondary hover:text-white transition-colors text-[14px] cursor-pointer"
               }
-            >
-              Book a Call
-            </button>
+              label="Book a Call"
+            />
           </div>
         ))}
       </div>

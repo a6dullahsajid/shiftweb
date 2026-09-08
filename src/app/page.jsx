@@ -5,6 +5,7 @@ import PremiumCard from "./components/PremiumCard";
 import Cta from "./components/Cta";
 import PricingSection from "./components/PricingSection";
 import HeroCarousel from "./components/HeroCarousel";
+import StartProjectButton from "./components/StartProjectButton";
 
 const Hero = () => {
   return (
@@ -40,9 +41,7 @@ const Hero = () => {
             </p>
           </div>
           <div className="pt-4 flex items-center gap-5">
-            <button className="bg-primary hover:bg-primary/90 text-white w-[136px] h-[40px] cursor-pointer transition-colors">
-              Start a project
-            </button>
+            <StartProjectButton className="bg-primary hover:bg-primary/90 text-white w-[136px] h-[40px] cursor-pointer transition-colors" />
             <Link href="/work">
               <button className="text-secondary hover:bg-secondary hover:text-white w-[136px] h-[40px] cursor-pointer transition-colors border border-secondary">
                 See our work
@@ -58,7 +57,7 @@ const Hero = () => {
       </section>
 
       <section className="services-section bg-[#F8FAFC]" id="services">
-        <div className="flex items-start flex-col lg:flex-row justify-between mx-auto w-full px-6 md:px-10 max-w-6xl pt-14 pb-20 overflow-hidden gap-12 lg:gap-8">
+        <div className="flex items-start flex-col lg:flex-row justify-between mx-auto w-full px-6 md:px-10 max-w-6xl py-10 overflow-hidden gap-6 md:gap-8">
           <div className="left flex-1">
             <div>
               <p className="uppercase text-secondary text-[12px]">
@@ -66,7 +65,7 @@ const Hero = () => {
               </p>
             </div>
             <div className="py-8">
-              <p className="text-primary text-[36px] sm:text-[50px] max-w-[850px] leading-[1.2] font-[140]">
+              <p className="text-primary text-2xl md:text-5xl max-w-[870px] leading-[1.2] font-[140]">
                 From your visual identity to your launch strategy. We provide
                 the complete digital toolkit to get your business off the
                 ground.
@@ -140,18 +139,18 @@ const Hero = () => {
         </div>
       </section>
 
-      <section className="work-section mx-auto w-full px-6 md:px-10 max-w-6xl pt-14 pb-20 overflow-hidden gap-12 lg:gap-8">
+      <section className="work-section mx-auto w-full px-6 md:px-10 max-w-6xl py-10 overflow-hidden gap-6 md:gap-8">
         <div>
           <p className="uppercase text-secondary text-[12px]">
             our recent work
           </p>
         </div>
         <div className="py-8 flex flex-col lg:flex-row gap-5 justify-between lg:items-baseline-last">
-          <p className="text-primary text-[36px] sm:text-[50px] max-w-[850px] leading-[1.2] font-[140]">
+          <p className="text-primary text-2xl md:text-5xl max-w-[870px] leading-[1.2] font-[140]">
             Built for scale. Designed for impact. See how our digital ecosystems
             perform in the real world.
           </p>
-          <Link href="/work" className="text-secondary hover:text-primary transition-colors">
+          <Link href="/work" className="text-xs md:text-lg my-2 md:my-6 text-secondary max-w-[706px] hover:text-primary transition-colors">
             View all case studies &rarr;
           </Link>
         </div>
@@ -163,7 +162,7 @@ const Hero = () => {
       </section>
 
       <section className="plan-section bg-[#F8FAFC]" id="plan">
-        <div className="mx-auto w-full px-6 md:px-10 max-w-6xl pt-14 pb-20 overflow-hidden gap-12 lg:gap-8">
+        <div className="mx-auto w-full px-6 md:px-10 max-w-6xl py-10 overflow-hidden gap-6 md:gap-8">
           <div>
             <p className="uppercase text-secondary text-[12px]">how we start</p>
           </div>
@@ -173,16 +172,14 @@ const Hero = () => {
                 <p className="text-primary text-[36px] sm:text-[50px] max-w-[706px] leading-[1.2] font-[140]">
                   Plan first. Build second.
                 </p>
-                <p className="text-[20px] max-w-[350px] text-secondary">
+                <p className="text-sm md:text-lg my-2 md:my-6 text-secondary max-w-[350px] text-secondary">
                   We start by simplifying your vision. Next, we map out the
                   exact steps to get there. Then, we build a fast, high-quality
                   version of your product so you can test it with the real world
                   before committing to the next phase.
                 </p>
               </div>
-              <button className="bg-primary hover:bg-primary/90 text-white w-[136px] h-[40px] cursor-pointer transition-colors">
-                Start a project
-              </button>
+              <StartProjectButton className="bg-primary hover:bg-primary/90 text-white w-[136px] h-[40px] cursor-pointer transition-colors" />
             </div>
 
             {/* sadfsdf */}
@@ -261,14 +258,14 @@ const Hero = () => {
         </div>
       </section>
 
-      <section className="testimonial-section flex flex-col justify-center items-center mx-auto w-full px-6 md:px-10 max-w-6xl pt-14 pb-20 overflow-hidden gap-12 lg:gap-8">
+      <section className="testimonial-section flex flex-col justify-center items-center mx-auto w-full px-6 md:px-10 max-w-6xl pt-14 pb-20 overflow-hidden gap-6 md:gap-8">
         <div>
           <p className="uppercase text-secondary text-[12px]">
             Why founders trust us
           </p>
         </div>
-        <div className="pb-5">
-          <p className="text-primary text-center text-[36px] sm:text-[50px] max-w-[806px] leading-[1.2] font-[140]">
+        <div className="pb-4">
+          <p className="text-primary text-center text-2xl md:text-5xl max-w-[806px] leading-[1.2] font-[140]">
             “We never pad the scope. We’d rather simplify the architecture and
             earn your trust.”
           </p>

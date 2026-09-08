@@ -3,19 +3,27 @@ const TestimonialMarquee = () => {
   const testimonials = [
     {
       quote: "We never pad the scope. We’d rather simplify the architecture and earn your trust.",
-      author: "kickxwear",
+      author: "Kickxwear",
     },
     {
       quote: "They bypassed the fluff and delivered a highly optimized infrastructure on week one.",
-      author: "TechFlow Inc.",
+      author: "Oasis Trends",
     },
     {
       quote: "Fast, reliable, and completely transparent. The best development partners we've hired.",
-      author: "Studio9",
+      author: "Explorist",
     },
     {
       quote: "Our conversion rates doubled after they rebuilt our storefront. Highly recommended.",
-      author: "Apex Apparel",
+      author: "Vanlife",
+    },
+    {
+      quote: "The new platform made our brand easier to discover and our work easier to showcase.",
+      author: "Spendwise",
+    },
+    {
+      quote: "A thoughtful digital experience that feels clear, fast, and true to our brand.",
+      author: "Shutup Media",
     },
   ];
 
