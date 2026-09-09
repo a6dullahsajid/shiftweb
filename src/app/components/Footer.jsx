@@ -21,10 +21,10 @@ function Footer() {
             Agencies over-complicate things. We cut the noise. By handling your entire ecosystem, we build exactly what matters.
           </p>
           <Link
-            href="mailto:shiftweb.in@gmail.com"
+            href="mailto:shiftwebdesign.in@gmail.com"
             className="font-medium hover:underline hover:text-white text-[15px] text-slate-300 transition-colors"
           >
-            shiftweb.in@gmail.com
+            shiftwebdesign.in@gmail.com
           </Link>
         </div>
 

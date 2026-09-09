@@ -68,8 +68,8 @@ export default function TermsOfService() {
             <h2 className="text-[22px] sm:text-[26px] font-[140] text-primary">6. Contact us</h2>
             <p>
               If you have any questions regarding our Terms of Service, scope definitions, or project agreements, please contact us at: <br/>
-              <Link href="mailto:shiftweb.in@gmail.com" className="text-primary hover:text-secondary transition-colors mt-2 inline-block">
-                shiftweb.in@gmail.com
+              <Link href="mailto:shiftwebdesign.in@gmail.com" className="text-primary hover:text-secondary transition-colors mt-2 inline-block">
+                shiftwebdesign.in@gmail.com
               </Link>
             </p>
           </div>

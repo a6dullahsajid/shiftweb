@@ -21,7 +21,6 @@ const Cta = () => {
       </div>
       <div className="pt-4 flex flex-col md:flex-row items-start gap-5">
         <StartProjectButton className="bg-white text-black hover:bg-gray-200 w-[200px] sm:w-[136px] h-[40px] cursor-pointer transition-colors" />
-
         <Link href="/work" className="flex items-center justify-center text-white hover:bg-white hover:text-primary w-[200px] sm:w-[136px] h-[40px] cursor-pointer transition-colors border border-white">
           See our work
         </Link>

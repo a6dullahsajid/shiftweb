@@ -54,8 +54,8 @@ export default function PrivacyPolicy() {
             <h2 className="text-[22px] sm:text-[26px] font-[140] text-primary">4. Contact us</h2>
             <p>
               If you have any questions about this Privacy Policy or how we handle your data, please contact us at: <br/>
-              <Link href="mailto:shiftweb.in@gmail.com" className="text-primary hover:text-secondary transition-colors mt-2 inline-block">
-                shiftweb.in@gmail.com
+              <Link href="mailto:shiftwebdesign.in@gmail.com" className="text-primary hover:text-secondary transition-colors mt-2 inline-block">
+                shiftwebdesign.in@gmail.com
               </Link>
             </p>
           </div>

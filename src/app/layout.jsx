@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header"; 
 import Footer from "./components/Footer";
 import OpenGraphImage from "./assets/opengraph-image.png";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -61,6 +62,7 @@ export default function RootLayout({ children }) {
       data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <Analytics />
       <body className="min-h-full flex flex-col bg-white">
         {/* The Header MUST go inside the body */}
         <Header />
@@ -76,7 +78,7 @@ export default function RootLayout({ children }) {
                   "@id": "https://www.shiftweb.in/#organization",
                   name: "Shift Web",
                   url: "https://www.shiftweb.in",
-                  email: "shiftweb.in@gmail.com",
+                  email: "shiftwebdesign.in@gmail.com",
                   sameAs: [
                     "https://www.instagram.com/shiftweb.design",
                     "https://www.facebook.com/share/18Monk33iM/",

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-const email = "shiftweb.in@gmail.com";
+const email = "shiftwebdesign.in@gmail.com";
 const whatsappNumber = "6393170895";
 
 const whatsappMessage = encodeURIComponent(
@@ -128,7 +128,7 @@ const StartProjectButton = ({
       {/* Modal */}
       {isOpen && (
         <div
-          className={`${isHeader ? 'absolute top-0 left-0' : 'fixed top-0 left-0'}  z-60 flex flex-col w-screen h-screen items-center justify-center bg-slate-950/50 px-5 py-8 backdrop-blur-[2px]`}
+          className={`${isHeader ? 'absolute top-0 right-0' : 'fixed top-0 right-0'}  z-60 flex flex-col w-screen h-screen items-center justify-center bg-slate-950/50 px-5 py-8 backdrop-blur-[2px]`}
           role="presentation"
           onMouseDown={(event) => {
             if (event.target === event.currentTarget) {
