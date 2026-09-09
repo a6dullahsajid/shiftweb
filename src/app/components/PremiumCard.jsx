@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const ProjectCard = ({ info }) => {
   return (
-    <div className="project-card-1 py-6 flex flex-col justify-between gap-2 w-full bg-[#F8FAFC] border border-secondary/20">
+    <div className="project-card-1  py-6 flex flex-col justify-between gap-2 w-full bg-[#F8FAFC] border border-secondary/20">
       <div>
         <div className="top relative">
           <div className="flex pl-5 sm:pl-10 items-center gap-2.5 text-[12px] text-secondary">
@@ -24,20 +24,16 @@ const ProjectCard = ({ info }) => {
               </span>
             </div>
           </div>
-          <Link href={info.links.live}>
+          <Link href={info.links.live} target="_blank" rel="noopener noreferrer">
             <div className="max-w-[350px] my-5 mx-4 md:mx-18">
-              <Image src={info.image} alt={info.title} />
+              <Image src={info.image} alt={info.title} className="transition-all duration-400 drop-shadow-[-1px_2px_2px_rgba(0,0,0,0.5)] hover:drop-shadow-[-2px_5px_5px_rgba(0,0,0,0.4)]" />
             </div>
           </Link>
           {/* <div className="absolute bottom-0 w-full h-[120px] backdrop-blur-md bg-white/20 [mask-image:linear-gradient(to_bottom,transparent_0%,black_100%)] pointer-events-none z-10"></div> */}
         </div>
 
         <div className="bottom px-5 sm:px-10 flex flex-col group cursor-pointer ">
-          <Link
-            href={info.links.caseStudy}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href={info.links.caseStudy} rel="noopener noreferrer">
             <div className="wrapper">
               <div>
                 <p className="text-2xl md:text-3xl text-shadow-[0_0px_2px_rgba(59,130,246,0.5)] transition-all delay-100 group-hover:text-primary">

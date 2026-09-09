@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const email = "shiftweb.in@gmail.com";
 const whatsappNumber = "6393170895";
@@ -49,7 +50,7 @@ const StartProjectButton = ({
     const transitionTimer = setTimeout(() => {
       setIsCallFormOpen(true);
       setIsCallFormFlipping(false);
-    }, 400);
+    }, 300);
 
     return () => clearTimeout(transitionTimer);
   }, [isCallFormFlipping]);
@@ -61,7 +62,7 @@ const StartProjectButton = ({
       setIsCallFormOpen(false);
       setIsCallFormClosing(false);
       setIsReturningToOptions(true);
-    }, 400);
+    }, 300);
 
     return () => clearTimeout(transitionTimer);
   }, [isCallFormClosing]);
@@ -189,7 +190,7 @@ const StartProjectButton = ({
 
                 <div className="flex flex-col gap-2.5">
                     {/* WhatsApp */}
-                    <a
+                    <Link
                       href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
                       target="_blank"
                       rel="noreferrer"
@@ -220,7 +221,7 @@ const StartProjectButton = ({
                       <span className="text-xl transition-transform duration-200 group-hover:translate-x-1">
                         →
                       </span>
-                    </a>
+                    </Link>
 
                     {/* Request a call */}
                     <button
@@ -258,7 +259,7 @@ const StartProjectButton = ({
                     </button>
 
                     {/* Email */}
-                    <a
+                    <Link
                       href={`mailto:${email}`}
                       className="group flex min-h-[68px] items-center justify-between border border-divider bg-white px-5 text-primary transition-all hover:-translate-y-[1px] hover:border-primary hover:shadow-md"
                     >
@@ -287,7 +288,7 @@ const StartProjectButton = ({
                       <span className="text-xl transition-transform duration-200 group-hover:translate-x-1">
                         →
                       </span>
-                    </a>
+                    </Link>
                 </div>
               </div>
             )}
@@ -300,7 +301,7 @@ const StartProjectButton = ({
                 <button
                   type="button"
                   onClick={() => setIsCallFormClosing(true)}
-                  className="mb-2 text-xs text-secondary transition-colors hover:text-primary"
+                  className="mb-2 text-xs text-secondary cursor-pointer transition-colors hover:text-primary"
                 >
                   &larr; Back to contact options
                 </button>
@@ -364,7 +365,7 @@ const StartProjectButton = ({
             )}
 
             {/* Footer reassurance */}
-            <div className="mt-6 border-t border-divider pt-4">
+            <div className="mt-6 border-t border-secondary/40 pt-1">
               <p className="text-xs text-secondary">
                 No commitment. Just a conversation.
               </p>

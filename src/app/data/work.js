@@ -2,6 +2,7 @@ import kickxwearImage from "../assets/kickxwear-card-white.png";
 import oasisTrendsImage from "../assets/oasistrends-card-white.png";
 import vanlifeImage from "../assets/vanlife-card-white.png";
 import spendwiseImage from "../assets/spendwise-card-white.png";
+import portexaImage from "../assets/portexa-card-white.png";
 
 const projects = [
   {
@@ -264,45 +265,53 @@ const projects = [
     cardTitle: "Smart Expense Tracker & AI Financial Assistant",
     slug: "spendwise",
 
-    category: "Website",
-    projectType: "Business Website",
+    category: "Web Application",
+    projectType: "Expense Tracker",
+
     year: "2026",
 
-    description: "A comprehensive full-stack financial management platform built on the MERN stack. Features an integrated AI chatbot for intelligent insights, dynamic expense-to-income graphs for visual data analysis, and a secure backend for reliable transaction tracking.",
+    description:
+      "A full-stack expense tracking web application designed to help users manage their finances, monitor income and expenses, visualize spending patterns and gain intelligent insights through an integrated AI assistant.",
 
     shortDescription:
-      "A modern business website focused on clarity, performance and presenting the brand professionally online.",
+      "A smart expense tracking web application combining financial management, data visualization and AI-powered insights.",
 
     image: spendwiseImage,
 
     services: [
       "UI/UX Design",
-      "Web Development",
-      "SEO",
+      "Web Application Development",
+      "Financial Dashboard",
+      "AI Integration",
     ],
 
     problem: [
-      "The business needed a stronger and more professional online presence.",
-      "Important information needed to be presented clearly to potential customers.",
-      "The website needed to provide a responsive experience across devices.",
+      "Users needed a simple way to record and manage their daily income and expenses.",
+      "Understanding spending patterns can be difficult when financial data is spread across individual transactions.",
+      "Users needed clear visual insights to understand the relationship between their income and spending.",
+      "The application needed an intuitive interface that could make personal financial management easier.",
     ],
 
     solution: [
-      "Designed a clean interface with a clear content hierarchy.",
-      "Developed responsive pages optimized for different screen sizes.",
-      "Structured the website around clear navigation and calls to action.",
-      "Implemented an SEO-friendly technical foundation.",
+      "Designed a clean and intuitive dashboard for managing income and expense data.",
+      "Developed an expense tracking system for recording and organizing financial transactions.",
+      "Implemented dynamic income and expense graphs to provide a clear visual overview of financial activity.",
+      "Integrated an AI-powered chatbot to provide intelligent financial insights and assistance.",
+      "Built a secure backend for reliable transaction management and data handling.",
+      "Developed a responsive experience that works smoothly across different screen sizes.",
     ],
 
     highlights: [
-      "Modern, professional business website",
-      "Clean UI with clear content hierarchy",
-      "Responsive experience across desktop, tablet and mobile",
-      "Clear navigation for easier information discovery",
-      "Strategic call-to-action sections focused on conversions",
-      "Performance-focused development for a smoother experience",
-      "SEO-friendly technical foundation for future search growth",
+      "Full-stack expense tracking web application",
+      "Income and expense management",
+      "Dynamic financial data visualization",
+      "AI-powered financial assistant",
+      "Interactive expense and income graphs",
+      "Secure transaction management",
+      "Responsive user experience",
+      "Performance-focused development",
     ],
+
     techStack: [
       "React",
       "Node.js",
@@ -312,16 +321,23 @@ const projects = [
     ],
 
     seo: {
-      title: "Spendwise Website Development | Shift Web",
+      title: "Spendwise | Expense Tracker Web Application | Shift Web",
 
       description:
-        "Explore how Shift Web designed and developed a modern business website for Spendwise with responsive design, performance and SEO in mind.",
+        "Explore how Shift Web designed and developed Spendwise, a full-stack expense tracker web application with financial dashboards, data visualization and an AI-powered financial assistant.",
 
       keywords: [
-        "Spendwise website",
-        "Spendwise web development",
-        "business website development",
-        "Next.js website development",
+        "Spendwise",
+        "Spendwise expense tracker",
+        "expense tracker web application",
+        "expense management application",
+        "personal finance web application",
+        "AI expense tracker",
+        "AI financial assistant",
+        "expense tracking software",
+        "React expense tracker",
+        "MERN stack application",
+        "financial dashboard",
         "Shift Web portfolio",
       ],
     },
@@ -329,6 +345,90 @@ const projects = [
     links: {
       live: "https://spendwise-mqxp.onrender.com/",
       caseStudy: "/work/spendwise",
+    },
+  },
+  {
+    id: "portexa",
+    title: "Portexa",
+    cardTitle: "Digital Platform & Interactive Experience",
+    slug: "portexa",
+
+    category: "Digital Platform",
+    projectType: "Portfolio Building Platform",
+    year: "2026",
+
+    description:
+      "A purpose-built digital platform designed to bring its core functionality into a structured and intuitive web experience. Portexa combines a modern interface with interactive workflows, responsive architecture and a scalable foundation designed to make complex functionality simple and accessible for users.",
+
+    shortDescription:
+      "A modern digital platform built around intuitive workflows, interactive functionality and a scalable user experience.",
+
+    image: portexaImage,
+
+    services: [
+      "UI/UX Design",
+      "Platform Development",
+      "Interactive Experience",
+      "Responsive Development",
+    ],
+
+    problem: [
+      "The platform needed to present its core functionality through a clear and intuitive user experience.",
+      "Users needed a structured way to interact with the platform without unnecessary complexity.",
+      "The experience needed to remain consistent and responsive across different devices.",
+      "The platform required a scalable foundation that could support future functionality and improvements.",
+    ],
+
+    solution: [
+      "Designed a structured interface that makes the platform's functionality easy to understand and navigate.",
+      "Created intuitive workflows that guide users through key platform interactions.",
+      "Developed responsive interfaces optimized for desktop, tablet and mobile experiences.",
+      "Built reusable components to maintain consistency across the platform.",
+      "Focused on performance, usability and smooth interactions throughout the experience.",
+      "Created a scalable architecture that allows the platform to evolve with future requirements.",
+    ],
+
+    highlights: [
+      "Purpose-built digital platform",
+      "Intuitive user workflows",
+      "Interactive platform experience",
+      "Responsive interface across devices",
+      "Reusable and consistent UI components",
+      "Performance-focused development",
+      "Scalable platform architecture",
+    ],
+
+    techStack: [
+      "Next.js",
+      "React",
+      "Firestore",
+      "OAuth Authentication",
+      "Tailwind CSS",
+    ],
+
+    seo: {
+      title: "Portexa | Digital Platform Development | Shift Web",
+
+      description:
+        "Explore how Shift Web designed and developed Portexa, a modern digital platform focused on intuitive workflows, interactive functionality, responsive design and scalable architecture.",
+
+      keywords: [
+        "Portexa",
+        "Portexa platform",
+        "Portexa web platform",
+        "digital platform development",
+        "web platform development",
+        "interactive web platform",
+        "Next.js platform development",
+        "React web platform",
+        "UI UX platform design",
+        "Shift Web portfolio",
+      ],
+    },
+
+    links: {
+      live: "https://portexa.vercel.app/",
+      caseStudy: "/work/portexa",
     },
   },
 ];

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProjectCard({
   number,
@@ -14,7 +15,7 @@ export default function ProjectCard({
     isFirst = true;
   }
   return (
-    <a href={href} className="group block">
+    <Link href={href} className="group block">
       {/* Number + View Project */}
       <div className="mb-3 flex items-center justify-between">
         {/* <span className="text-sm font-semibold text-black">{number}</span> */}
@@ -134,6 +135,6 @@ export default function ProjectCard({
           </div>
         )}
       </div>
-    </a>
+    </Link>
   );
 }

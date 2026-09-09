@@ -5,14 +5,14 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <section className="footer-section bg-primary text-white">
+    <footer className="footer-section bg-primary text-white">
       <div className="mx-auto flex w-full max-w-6xl flex-col justify-between gap-10 overflow-hidden px-6 pb-12 pt-12 sm:gap-12 md:flex-row md:px-11 md:pb-16 md:pt-20 lg:gap-8">
         
         {/* Left Side: Brand & Mission */}
         <div className="left flex max-w-sm flex-col gap-5 md:max-w-xs">
           <Image
             src={shiftweb_logo}
-            alt="shift-web logo"
+            alt="Shift Web"
             width={112}
             height={32}
             className="h-auto w-28"
@@ -20,21 +20,21 @@ function Footer() {
           <p className="text-sm leading-relaxed text-slate-300">
             Agencies over-complicate things. We cut the noise. By handling your entire ecosystem, we build exactly what matters.
           </p>
-          <a 
-            href="mailto:hello@youragency.com" 
+          <Link
+            href="mailto:shiftweb.in@gmail.com"
             className="font-medium hover:underline hover:text-white text-[15px] text-slate-300 transition-colors"
           >
             shiftweb.in@gmail.com
-          </a>
+          </Link>
         </div>
 
         {/* Right Side: Navigation Columns */}
         <div className="right grid w-full grid-cols-2 gap-8 sm:gap-12 md:w-auto md:gap-20">
           
           <div className="flex min-w-0 flex-col gap-5">
-            <p className="font-semibold text-white text-[14px] uppercase tracking-wider">
+            <h2 className="font-semibold text-white text-[14px] uppercase tracking-wider">
               Company
-            </p>
+            </h2>
             <ul className="flex flex-col gap-3 text-sm text-slate-300">
               <li><Link href="/#services" className="hover:text-white transition-colors">Our services</Link></li>
               <li><Link href="/work" className="hover:text-white transition-colors">Our work</Link></li>
@@ -45,9 +45,9 @@ function Footer() {
           </div>
 
           <div className="flex min-w-0 flex-col gap-5">
-            <p className="font-semibold text-[14px] uppercase tracking-wider">
+            <h2 className="font-semibold text-[14px] uppercase tracking-wider">
               Socials
-            </p>
+            </h2>
             <ul className="flex flex-col gap-3 text-sm text-slate-300">
               <li>
                 <Link
@@ -97,7 +97,7 @@ function Footer() {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
 

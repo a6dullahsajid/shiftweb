@@ -7,6 +7,12 @@ import PricingSection from "./components/PricingSection";
 import HeroCarousel from "./components/HeroCarousel";
 import StartProjectButton from "./components/StartProjectButton";
 
+export const metadata = {
+  title: "Web Design, Development & SEO for Ambitious Brands | Shift Web",
+  description:
+    "Shift Web creates high-performance websites, digital products, and technical SEO systems that help ambitious businesses grow online.",
+};
+
 const Hero = () => {
   return (
     <>
@@ -19,16 +25,16 @@ const Hero = () => {
             </p>
           </div>
           <div className="py-4">
-            <p className="text-[42px] sm:text-[72px] font-semibold">
+            <h1 className="text-[42px] sm:text-[72px] font-semibold">
               We Create
-            </p>
+            </h1>
             <div className="flex items-center gap-5">
               <span className="w-[54px] h-[52px] bg-primary font-semibold"></span>
               <p className="text-[42px] sm:text-[72px] text-secondary font-semibold leading-[1]">
                 Awesome
               </p>
             </div>
-            <p className="text-[42px] sm:text-[72px] font-semibold">
+              <p className="text-[42px] sm:text-[72px] font-semibold">
               Websites.
             </p>
           </div>
@@ -65,11 +71,11 @@ const Hero = () => {
               </p>
             </div>
             <div className="py-8">
-              <p className="text-primary text-2xl md:text-5xl max-w-[870px] leading-[1.2] font-[140]">
+              <h2 className="text-primary text-2xl md:text-5xl max-w-[870px] leading-[1.2] font-[140]">
                 From your visual identity to your launch strategy. We provide
                 the complete digital toolkit to get your business off the
                 ground.
-              </p>
+              </h2>
             </div>
             <div className="service-grid flex flex-col gap-5 mt-5">
               {/* Top Row */}
@@ -146,11 +152,11 @@ const Hero = () => {
           </p>
         </div>
         <div className="py-8 flex flex-col lg:flex-row gap-5 justify-between lg:items-baseline-last">
-          <p className="text-primary text-2xl md:text-5xl max-w-[870px] leading-[1.2] font-[140]">
+          <h2 className="text-primary text-2xl md:text-5xl max-w-[870px] leading-[1.2] font-[140]">
             Built for scale. Designed for impact. See how our digital ecosystems
             perform in the real world.
-          </p>
-          <Link href="/work" className="text-xs md:text-lg my-2 md:my-6 text-secondary max-w-[706px] hover:text-primary transition-colors">
+          </h2>
+          <Link href="/work" className="text-xs md:text-lg text-nowrap my-2 md:my-6 text-secondary max-w-[706px] hover:text-primary transition-colors">
             View all case studies &rarr;
           </Link>
         </div>
@@ -169,9 +175,9 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row gap-8 py-8">
             <div className="flex-1 justify-between flex flex-col gap-12 pb-2">
               <div className="flex flex-col gap-5">
-                <p className="text-primary text-[36px] sm:text-[50px] max-w-[706px] leading-[1.2] font-[140]">
+                <h2 className="text-primary text-[36px] sm:text-[50px] max-w-[706px] leading-[1.2] font-[140]">
                   Plan first. Build second.
-                </p>
+                </h2>
                 <p className="text-sm md:text-lg my-2 md:my-6 text-secondary max-w-[350px] text-secondary">
                   We start by simplifying your vision. Next, we map out the
                   exact steps to get there. Then, we build a fast, high-quality
@@ -265,10 +271,10 @@ const Hero = () => {
           </p>
         </div>
         <div className="pb-4">
-          <p className="text-primary text-center text-2xl md:text-5xl max-w-[806px] leading-[1.2] font-[140]">
+          <h2 className="text-primary text-center text-2xl md:text-5xl max-w-[806px] leading-[1.2] font-[140]">
             “We never pad the scope. We’d rather simplify the architecture and
             earn your trust.”
-          </p>
+          </h2>
         </div>
         <TestimonialMarquee />
       </section>

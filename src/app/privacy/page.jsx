@@ -1,9 +1,14 @@
 import React from "react";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Privacy Policy | Shift Web",
+  description: "Read Shift Web's privacy policy and learn how we handle visitor and client information.",
+};
+
 export default function PrivacyPolicy() {
   return (
-    <main className="bg-white text-primary">
+    <div className="bg-white text-primary">
       
       {/* HEADER SECTION */}
       <section className="flex justify-start border-b border-secondary/10">
@@ -49,14 +54,14 @@ export default function PrivacyPolicy() {
             <h2 className="text-[22px] sm:text-[26px] font-[140] text-primary">4. Contact us</h2>
             <p>
               If you have any questions about this Privacy Policy or how we handle your data, please contact us at: <br/>
-              <a href="mailto:shiftweb.in@gmail.com" className="text-primary hover:text-secondary transition-colors mt-2 inline-block">
+              <Link href="mailto:shiftweb.in@gmail.com" className="text-primary hover:text-secondary transition-colors mt-2 inline-block">
                 shiftweb.in@gmail.com
-              </a>
+              </Link>
             </p>
           </div>
 
         </div>
       </section>
-    </main>
+    </div>
   );
 }

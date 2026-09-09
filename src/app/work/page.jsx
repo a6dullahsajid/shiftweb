@@ -2,6 +2,12 @@ import PremiumCard from "../components/PremiumCard.jsx";
 import Cta from "../components/Cta";
 import projects from "../data/work.js";
 
+export const metadata = {
+  title: "Our Work | Shift Web",
+  description:
+    "Explore Shift Web case studies across e-commerce, business websites, SaaS, analytics, and custom digital platforms.",
+};
+
 export default function WorkPage() {
   return (
     <>
@@ -10,9 +16,9 @@ export default function WorkPage() {
         <p className="uppercase text-secondary text-[12px]">work</p>
       </div>
       <div className="py-3 md:py-6">
-        <p className="text-primary text-2xl md:text-5xl max-w-[850px] md:leading-[1.2] font-[140]">
+        <h1 className="text-primary text-2xl md:text-5xl max-w-[850px] md:leading-[1.2] font-[140]">
           Production software, in domains that don&apos;t tolerate shortcuts.
-        </p>
+        </h1>
         <p className="text-xs md:text-lg my-2 md:my-6 text-secondary max-w-[706px]">
           Every case study here is a live or delivered system. No concept demos,
           no speculative decks — just what we built, how, and what it did for

@@ -1,6 +1,12 @@
 import Link from "next/link";
 import Cta from "../components/Cta";
 
+export const metadata = {
+  title: "About Shift Web | Technical Web Partner",
+  description:
+    "Learn how Shift Web combines purposeful design, dependable engineering, and technical SEO to build digital ecosystems for ambitious brands.",
+};
+
 const principles = [
   {
     number: "01",
@@ -33,7 +39,7 @@ const capabilities = [
 
 export default function AboutPage() {
   return (
-    <main className="w-full bg-white text-primary">
+    <div className="w-full bg-white text-primary">
       {/* 1. HERO SECTION: Left-Aligned, Font-[140] */}
       <section className="w-full flex justify-start border-b border-secondary/10">
         <div className="mx-auto w-full px-6 md:px-10 max-w-6xl pt-14 pb-20 overflow-hidden flex flex-col gap-8 items-start text-left">
@@ -79,8 +85,8 @@ export default function AboutPage() {
             <div className="flex-1 flex flex-col justify-end">
               <div className="border-l-2 border-primary pl-6 sm:pl-10">
                 <p className="text-[22px] sm:text-[28px] font-[140] text-primary leading-snug">
-                  "We cut the noise, simplify the complex, and build incredibly
-                  fast."
+                  &quot;We cut the noise, simplify the complex, and build incredibly
+                  fast.&quot;
                 </p>
               </div>
             </div>
@@ -149,6 +155,6 @@ export default function AboutPage() {
       <section className="mx-auto w-full px-6 md:px-10 max-w-6xl pt-14 pb-20 overflow-hidden flex justify-start text-left">
         <Cta />
       </section>
-    </main>
+    </div>
   );
 }

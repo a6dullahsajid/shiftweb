@@ -110,13 +110,13 @@ export default async function ProjectPage({ params }) {
   };
 
   return (
-    <main className=" text-black mx-auto w-full px-6 md:px-10 max-w-6xl pt-14 pb-20 overflow-hidden">
+    <div className="text-black mx-auto w-full px-6 md:px-10 max-w-6xl pt-14 pb-20 overflow-hidden">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <section>
-        <div className="Navbar flex gap-2 text-[12px] text-secondary">
+        <nav aria-label="Breadcrumb" className="flex gap-2 text-[12px] text-secondary">
           <Link href={"/"}>
             <p className="hover:text-black">Home</p>
           </Link>
@@ -126,7 +126,7 @@ export default async function ProjectPage({ params }) {
           </Link>
           <p>/</p>
           <p className="text-black">{data.title}</p>
-        </div>
+        </nav>
 
         {/* Title + description */}
         <div className="flex flex-col-reverse md:flex-row justify-between align-top my-10 gap-10">
@@ -169,7 +169,7 @@ export default async function ProjectPage({ params }) {
 
             {data.links.live && (
               <div className="mt-6 md:mt-8">
-                <a
+                <Link
                   href={data.links.live}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -189,7 +189,7 @@ export default async function ProjectPage({ params }) {
                 >
                   Visit live website
                   <span>↗</span>
-                </a>
+                </Link>
               </div>
             )}
           </div>
@@ -324,11 +324,11 @@ export default async function ProjectPage({ params }) {
           </h2>
         </div>
 
-        <div className="w-fit grid grid-cols-1 md:grid-cols-2">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2">
           {data.highlights.map((highlight, index) => (
             <div
               key={highlight}
-              className={`${index % 2 === 0 ? "md:border-r" : ""} border-b border-slate-200 py-4 md:pl-4`}
+              className={`${index % 2 === 0 ? "md:border-r" : ""} border-b border-slate-200 py-4 md:px-4`}
             >
               <span className="text-xs md:text-sm text-slate-400">
                 {String(index + 1).padStart(2, "0")}
@@ -397,6 +397,6 @@ export default async function ProjectPage({ params }) {
       </section>
 
 
-    </main>
+    </div>
   );
 }

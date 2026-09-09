@@ -3,7 +3,7 @@ import projects from "./data/work";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 export default function sitemap() {
-  const pages = ["", "/about", "/work"];
+  const pages = ["", "/about", "/work", "/privacy", "/terms"];
   const projectPages = projects.map((project) => `/work/${project.slug}`);
 
   return [...pages, ...projectPages].map((path) => ({

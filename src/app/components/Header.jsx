@@ -21,7 +21,7 @@ const Header = () => {
     <header className='sticky top-0 z-40 backdrop-blur-lg bg-white/80 border-b border-divider border-[#64748B]'>
         <div className='mx-auto w-full px-6 md:px-10 max-w-6xl flex items-center justify-between h-[72px] py-4'>
         <Link href="/" className="flex items-center gap-2.5 font-display text-2xl tracking-tight leading-none">
-            <Image src={shiftweb_logo} alt='header-logo' loading='eager' width={84}/>
+            <Image src={shiftweb_logo} alt='Shift Web' loading='eager' width={84}/>
         </Link>
         <nav className="navbar-desk hidden md:flex">
             <ul className='flex items-center gap-8 text-secondary text-[12px] lg:text-[14px]'>
@@ -43,12 +43,16 @@ const Header = () => {
                 <StartProjectButton isHeader className='bg-primary hover:bg-primary/90 text-white w-[136px] h-[40px] cursor-pointer transition-colors' />
             </ul>
         </nav>
-        <nav 
-            className="navbar-mob flex md:hidden cursor-pointer" 
-            onClick={toggleSidebar}
-          >
-            <Image src={menu_bar} alt='menu-bar' loading='eager' width={32} />
-          </nav>
+        <button
+          type="button"
+          className="navbar-mob flex md:hidden cursor-pointer"
+          onClick={toggleSidebar}
+          aria-label="Open navigation menu"
+          aria-expanded={isSidebarOpen}
+          aria-controls="mobile-navigation"
+        >
+          <Image src={menu_bar} alt="" loading="eager" width={32} />
+        </button>
         </div>
       </header>
 
@@ -63,7 +67,9 @@ const Header = () => {
       )}
 
       {/* Sidebar Container */}
-      <div 
+      <div
+        id="mobile-navigation"
+        aria-hidden={!isSidebarOpen}
         className={`fixed top-0 right-0 h-full w-64 bg-white/95 backdrop-blur-md shadow-2xl z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
           isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
@@ -82,19 +88,19 @@ const Header = () => {
         <nav className="flex flex-col gap-6 px-8 py-4">
           <ul className='flex flex-col gap-6 text-secondary text-[16px] font-medium'>
             <li>
-              <Link href="/" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">Our services</Link>
+              <Link href="/#services" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">Our services</Link>
             </li>
             <li>
-              <Link href="/about" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">Our work</Link>
+              <Link href="/work" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">Our work</Link>
             </li>
             <li>
-              <Link href="/services" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">How we work</Link>
+              <Link href="/#plan" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">How we work</Link>
             </li>
             <li>
-              <Link href="/services" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">Investment</Link>
+              <Link href="/#pricing" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">Investment</Link>
             </li>
             <li>
-              <Link href="/services" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">About</Link>
+              <Link href="/about" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">About</Link>
             </li>
             <StartProjectButton isHeader className='bg-[#233DFF] text-white w-full h-[48px] mt-4 cursor-pointer transition-colors shadow-md' />
           </ul>

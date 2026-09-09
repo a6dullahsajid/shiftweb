@@ -1,9 +1,14 @@
 import React from "react";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Terms of Service | Shift Web",
+  description: "Read the terms that govern use of the Shift Web website and services.",
+};
+
 export default function TermsOfService() {
   return (
-    <main className="bg-white text-primary">
+    <div className="bg-white text-primary">
       
       {/* HEADER SECTION */}
       <section className="flex justify-start border-b border-secondary/10">
@@ -63,14 +68,14 @@ export default function TermsOfService() {
             <h2 className="text-[22px] sm:text-[26px] font-[140] text-primary">6. Contact us</h2>
             <p>
               If you have any questions regarding our Terms of Service, scope definitions, or project agreements, please contact us at: <br/>
-              <a href="mailto:shiftweb.in@gmail.com" className="text-primary hover:text-secondary transition-colors mt-2 inline-block">
+              <Link href="mailto:shiftweb.in@gmail.com" className="text-primary hover:text-secondary transition-colors mt-2 inline-block">
                 shiftweb.in@gmail.com
-              </a>
+              </Link>
             </p>
           </div>
 
         </div>
       </section>
-    </main>
+    </div>
   );
 }
