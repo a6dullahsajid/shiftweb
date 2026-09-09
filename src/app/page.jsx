@@ -10,7 +10,7 @@ import StartProjectButton from "./components/StartProjectButton";
 export const metadata = {
   title: "Web Design, Development & SEO for Ambitious Brands | Shift Web",
   description:
-    "Shift Web creates high-performance websites, digital products, and technical SEO systems that help ambitious businesses grow online.",
+    "Award-winning web design and development agency. We build high-performance websites, e-commerce platforms, custom SaaS applications, and provide technical SEO optimization. Every project combines strategic design, robust engineering, and proven growth strategies.",
 };
 
 const Hero = () => {

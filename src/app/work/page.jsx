@@ -5,7 +5,7 @@ import projects from "../data/work.js";
 export const metadata = {
   title: "Our Work | Shift Web",
   description:
-    "Explore Shift Web case studies across e-commerce, business websites, SaaS, analytics, and custom digital platforms.",
+    "Explore Shift Web case studies: e-commerce platforms with custom analytics, B2B catalog sites, SaaS applications, and high-performance business websites. Every project represents production software built for real-world impact and measurable results.",
 };
 
 export default function WorkPage() {

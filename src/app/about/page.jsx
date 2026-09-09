@@ -4,7 +4,7 @@ import Cta from "../components/Cta";
 export const metadata = {
   title: "About Shift Web | Technical Web Partner",
   description:
-    "Learn how Shift Web combines purposeful design, dependable engineering, and technical SEO to build digital ecosystems for ambitious brands.",
+    "Shift Web is a technical web partner for ambitious brands. We combine strategic positioning, purposeful minimalism, and dependable full-stack engineering. From brand identity to production deployment, we build digital ecosystems designed to scale.",
 };
 
 const principles = [

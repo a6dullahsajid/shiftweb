@@ -60,7 +60,7 @@ export async function generateMetadata({ params }) {
           url: imageUrl,
           width: data.image.width,
           height: data.image.height,
-          alt: `${data.title} project preview`,
+          alt: `${data.title} preview`,
         },
       ],
     },

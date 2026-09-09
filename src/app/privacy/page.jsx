@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Privacy Policy | Shift Web",
-  description: "Read Shift Web's privacy policy and learn how we handle visitor and client information.",
+  description: "Review Shift Web's comprehensive privacy policy. We collect only essential information and use privacy-friendly analytics to understand user behavior while protecting your data.",
 };
 
 export default function PrivacyPolicy() {

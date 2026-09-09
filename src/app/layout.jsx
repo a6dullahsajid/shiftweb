@@ -19,7 +19,7 @@ export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
   title: "Shift Web | Design, Development & SEO",
   description:
-    "Shift Web designs and develops high-performance websites that look great, rank higher, and help businesses grow online.",
+    "Shift Web builds high-performance websites, custom web applications, and digital products for ambitious brands. We combine strategic design, technical SEO, and engineering excellence to create digital ecosystems that drive real business results.",
   keywords: [
     "web design",
     "web development",
@@ -39,14 +39,14 @@ export const metadata = {
     siteName: "Shift Web",
     title: "Shift Web | Design, Development & SEO",
     description:
-      "High-performance websites, digital products, and technical SEO for ambitious brands.",
+      "We design and develop custom websites, e-commerce platforms, and SaaS products with technical SEO built-in. From brand strategy to production deployment, we handle your entire digital ecosystem.",
     images: [OpenGraphImage],
   },
   twitter: {
     card: "summary_large_image",
     title: "Shift Web | Design, Development & SEO",
     description:
-      "High-performance websites, digital products, and technical SEO for ambitious brands.",
+      "Custom web design & development, e-commerce platforms, SaaS solutions, and technical SEO optimization for brands that refuse to blend in.",
     images: [OpenGraphImage],
   },
   robots: {

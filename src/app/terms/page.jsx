@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Terms of Service | Shift Web",
-  description: "Read the terms that govern use of the Shift Web website and services.",
+  description: "Shift Web's Terms of Service outline the agreement between you and Shift Web for website access and services. Learn about your rights and responsibilities when working with us.",
 };
 
 export default function TermsOfService() {
