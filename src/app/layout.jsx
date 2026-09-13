@@ -1,9 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "./components/Header"; 
+import Header from "./components/Header";
 import Footer from "./components/Footer";
-import OpenGraphImage from "./assets/opengraph-image.png";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+  ),
   title: "Shift Web | Design, Development & SEO",
   description:
     "Shift Web builds high-performance websites, custom web applications, and digital products for ambitious brands. We combine strategic design, technical SEO, and engineering excellence to create digital ecosystems that drive real business results.",
@@ -36,10 +37,6 @@ export const metadata = {
   icons: {
     icon: [
       {
-        url: "/favicon.ico",
-        sizes: "any",
-      },
-      {
         url: "/favicon.svg",
         type: "image/svg+xml",
       },
@@ -48,7 +45,12 @@ export const metadata = {
         sizes: "96x96",
         type: "image/png",
       },
+      {
+        url: "/favicon.ico",
+        sizes: "any",
+      },
     ],
+    shortcut: ["/favicon.ico"],
     apple: [
       {
         url: "/apple-touch-icon.png",
@@ -65,18 +67,25 @@ export const metadata = {
     title: "Shift Web | Design, Development & SEO",
     description:
       "We design and develop custom websites, e-commerce platforms, and SaaS products with technical SEO built-in. From brand strategy to production deployment, we handle your entire digital ecosystem.",
-    images: [OpenGraphImage],
+    images: ["/opengraph-image.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Shift Web | Design, Development & SEO",
     description:
       "Custom web design & development, e-commerce platforms, SaaS solutions, and technical SEO optimization for brands that refuse to blend in.",
-    images: [OpenGraphImage],
+    images: ["/opengraph-image.png"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 };
 
@@ -123,11 +132,9 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-        
+
         {/* Wrapping children in a flex-grow main tag ensures your layout fills the screen */}
-        <main className="flex-1">
-          {children}
-        </main>
+        <main className="flex-1">{children}</main>
 
         <Footer />
       </body>
