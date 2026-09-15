@@ -14,31 +14,44 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.shiftweb.in";
+
 export const metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-  ),
-  title: "Shift Web | Design, Development & SEO",
+  metadataBase: new URL(SITE_URL),
+
+  title: {
+    default: "Shift Web | Web Design, Development & SEO",
+    template: "%s | Shift Web",
+  },
+
   description:
-    "Shift Web builds high-performance websites, custom web applications, and digital products for ambitious brands. We combine strategic design, technical SEO, and engineering excellence to create digital ecosystems that drive real business results.",
+    "Shift Web builds high-performance websites, custom web applications, e-commerce platforms, and digital products for ambitious brands. We combine strategic design, technical SEO, and engineering excellence to create digital experiences that drive real business results.",
+
   keywords: [
+    "Shift Web",
     "web design",
     "web development",
     "website development",
     "SEO",
+    "technical SEO",
     "ecommerce website",
     "Next.js development",
     "Shopify development",
-    "Shift Web",
+    "custom web applications",
+    "SaaS development",
   ],
+
   alternates: {
     canonical: "/",
   },
+
+  // FAVICON
   icons: {
     icon: [
       {
-        url: "/favicon.svg",
-        type: "image/svg+xml",
+        url: "/favicon.ico",
+        sizes: "48x48",
+        type: "image/x-icon",
       },
       {
         url: "/favicon-96x96.png",
@@ -46,11 +59,13 @@ export const metadata = {
         type: "image/png",
       },
       {
-        url: "/favicon.ico",
-        sizes: "any",
+        url: "/favicon.svg",
+        type: "image/svg+xml",
       },
     ],
-    shortcut: ["/favicon.ico"],
+
+    shortcut: "/favicon.ico",
+
     apple: [
       {
         url: "/apple-touch-icon.png",
@@ -59,23 +74,38 @@ export const metadata = {
       },
     ],
   },
+
   manifest: "/site.webmanifest",
+
+  // OPEN GRAPH
   openGraph: {
     type: "website",
     url: "/",
     siteName: "Shift Web",
-    title: "Shift Web | Design, Development & SEO",
+    title: "Shift Web | Web Design, Development & SEO",
     description:
-      "We design and develop custom websites, e-commerce platforms, and SaaS products with technical SEO built-in. From brand strategy to production deployment, we handle your entire digital ecosystem.",
-    images: ["/opengraph-image.png"],
+      "We design and develop custom websites, e-commerce platforms, and SaaS products with technical SEO built in. From brand strategy to production deployment, we handle your entire digital ecosystem.",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Shift Web | Web Design, Development & SEO",
+      },
+    ],
+    locale: "en_US",
   },
+
+  // TWITTER / X
   twitter: {
     card: "summary_large_image",
-    title: "Shift Web | Design, Development & SEO",
+    title: "Shift Web | Web Design, Development & SEO",
     description:
-      "Custom web design & development, e-commerce platforms, SaaS solutions, and technical SEO optimization for brands that refuse to blend in.",
+      "Custom web design, development, e-commerce, SaaS solutions, and technical SEO for ambitious brands.",
     images: ["/opengraph-image.png"],
   },
+
+  // ROBOTS
   robots: {
     index: true,
     follow: true,
@@ -89,6 +119,39 @@ export const metadata = {
   },
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: "Shift Web",
+      alternateName: "ShiftWeb",
+      url: SITE_URL,
+      logo: `${SITE_URL}/logo.png`,
+      email: "shiftwebdesign.in@gmail.com",
+
+      sameAs: [
+        "https://www.instagram.com/shiftweb.design",
+        "https://www.facebook.com/share/18Monk33iM/",
+        "https://wa.me/6393170895",
+      ],
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      name: "Shift Web",
+      alternateName: "ShiftWeb",
+      url: SITE_URL,
+
+      publisher: {
+        "@id": `${SITE_URL}/#organization`,
+      },
+    },
+  ],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html
@@ -96,44 +159,19 @@ export default function RootLayout({ children }) {
       data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <Analytics />
       <body className="min-h-full flex flex-col bg-white">
-        {/* The Header MUST go inside the body */}
+        <Analytics />
+
         <Header />
 
+        {/* Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "Organization",
-                  "@id": "https://www.shiftweb.in/#organization",
-                  name: "Shift Web",
-                  url: "https://www.shiftweb.in",
-                  email: "shiftwebdesign.in@gmail.com",
-                  sameAs: [
-                    "https://www.instagram.com/shiftweb.design",
-                    "https://www.facebook.com/share/18Monk33iM/",
-                    "https://wa.me/6393170895",
-                  ],
-                },
-                {
-                  "@type": "WebSite",
-                  "@id": "https://www.shiftweb.in/#website",
-                  name: "Shift Web",
-                  url: "https://www.shiftweb.in",
-                  publisher: {
-                    "@id": "https://www.shiftweb.in/#organization",
-                  },
-                },
-              ],
-            }),
+            __html: JSON.stringify(structuredData),
           }}
         />
 
-        {/* Wrapping children in a flex-grow main tag ensures your layout fills the screen */}
         <main className="flex-1">{children}</main>
 
         <Footer />
