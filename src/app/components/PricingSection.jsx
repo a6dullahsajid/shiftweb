@@ -5,7 +5,7 @@ const pricingPlans = [
   {
     name: "Launch",
     description: "A polished 3–4 page static website to establish your presence online.",
-    price: "₹8,000",
+    price: "₹15,000",
     popular: false,
     features: [
       "3–4 page static business website",
@@ -22,7 +22,7 @@ const pricingPlans = [
   {
     name: "Growth",
     description: "Multi-page website with SEO and enquiry features.",
-    price: "₹15,000",
+    price: "₹25,000",
     popular: true,
     features: [
       "Complete multi-page business website",
@@ -40,7 +40,7 @@ const pricingPlans = [
     name: "Scale",
     description:
       "Dynamic website with admin panel, SEO and advanced analytics.",
-    price: "₹22,000",
+    price: "₹45,000",
     popular: false,
     features: [
       "Everything in the Normal Plan",
