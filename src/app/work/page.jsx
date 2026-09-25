@@ -18,7 +18,14 @@ export const metadata = {
     url: "/work",
     siteName: "Shift Web",
     type: "website",
-    images: ["/work-og-image.png"],
+    images: [
+      {
+        url: "/work-og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Shift Web — Our Work",
+      },
+    ],
   },
 
   twitter: {

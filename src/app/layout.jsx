@@ -85,7 +85,14 @@ export const metadata = {
     title: "Shift Web | Web Design, Development & SEO",
     description:
       "We design and develop custom websites, e-commerce platforms, and SaaS products with technical SEO built in. From brand strategy to production deployment, we handle your entire digital ecosystem.",
-    images: ["/opengraph-image.png"],
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Shift Web | Web Design, Development & SEO",
+      },
+    ],
     locale: "en_US",
   },
 
