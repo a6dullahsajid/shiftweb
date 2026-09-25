@@ -4,7 +4,8 @@ import StartProjectButton from "./StartProjectButton";
 const pricingPlans = [
   {
     name: "Launch",
-    description: "A polished 3–4 page static website to establish your presence online.",
+    description:
+      "A polished 3–4 page static website to establish your presence online.",
     price: "₹15,000",
     popular: false,
     features: [
@@ -39,7 +40,7 @@ const pricingPlans = [
   {
     name: "Scale",
     description:
-      "Dynamic website with admin panel, SEO and advanced analytics.",
+      "A custom web application built for growing businesses with dynamic features, admin controls and advanced analytics.",
     price: "₹45,000",
     popular: false,
     features: [
