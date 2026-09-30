@@ -97,7 +97,7 @@ const Header = () => {
               <Link href="/#plan" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">How we work</Link>
             </li>
             <li>
-              <Link href="/#pricing" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">Investment</Link>
+              <Link href="/#pricing" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">Pricing</Link>
             </li>
             <li>
               <Link href="/about" onClick={toggleSidebar} className="hover:text-gray-900 transition-colors block">About</Link>
